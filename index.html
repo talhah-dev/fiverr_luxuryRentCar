@@ -25,7 +25,65 @@
 <body class="">
 
     <div id="bottomToTopScroll"></div>
-    <div id="navbar"></div>
+    <!-- <div id="navbar"></div> -->
+
+    <nav class="absolute top-0 left-0 w-full z-40 transition-all duration-300">
+
+        <div data-aos="fade-down" class="border-b md:flex hidden items-center justify-between border-zinc-400 px-3 max-w-7xl mx-auto py-5">
+            <div class="flex items-center gap-3">
+                <h2 class="font-semibold text-zinc-100">Follow Us: </h2>
+                <div class="flex items-center gap-5">
+                    <a href="#"><i class="fa-brands text-zinc-100 text-lg fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-x-twitter text-zinc-100 text-lg"></i></a>
+                    <a href="#"><i class="fa-brands fa-skype text-zinc-100 text-lg"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram text-zinc-100 text-lg"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin text-zinc-100 text-lg"></i></a>
+                </div>
+            </div>
+            <div class="">
+                <a href="tel:+92123567" class="block text-zinc-100 flex items-center gap-3">
+                    <i class="fa-solid text-lg fa-phone-volume"></i>
+                    +92 1234567890
+                </a>
+            </div>
+        </div>
+
+        <div class="max-w-7xl mx-auto flex justify-between items-center w-full md:p-5 p-3 md:h-24 h-20">
+            <a data-aos="fade-right" href="/index.html" class="flex items-center justify-center lg:justify-start">
+                <!-- <img src="/docs/assets/images/LogoWhite.png" class="md:h-24 h-20" alt="logo"> -->
+                <h2 class="text-white font-semibold text-2xl">Logo</h2>
+            </a>
+            <div data-aos="fade-left" class="md:flex hidden items-center gap-10">
+                <div class="md:flex items-center gap-10 hidden">
+                    <ul class="md:flex hidden items-center text-zinc-100 gap-10">
+                        <li><a href="/index.html"
+                                class="hover:text-[#ddb93e] tracking-wide font-medium text-lg transition-all duration-500">Home
+                            </a>
+                        </li>
+                        <li><a href="/about.html"
+                                class="hover:text-[#ddb93e] tracking-wide font-medium text-lg transition-all duration-500">About
+                                Us</a>
+                        </li>
+                        <li><a href="/services.html"
+                                class="hover:text-[#ddb93e] tracking-wide font-medium text-lg transition-all duration-500">Services</a>
+                        </li>
+                        <li><a href="/fleet.html"
+                                class="hover:text-[#ddb93e] tracking-wide font-medium text-lg transition-all duration-500">Fleet</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="md:flex items-center justify-center gap-3 hidden" data-aos="fade-left">
+                <a href="/contact.html"
+                    class="md:block hidden transition-all duration-500 hover:bg-white hover:text-black font-medium border-2 border-[#fff] px-8 py-3 rounded-lg text-white bg-transparent">Contact
+                    Us</a>
+            </div>
+
+            <i data-aos="fade-left"
+                class="fa-solid mobileMenuBtn text-zinc-200 fa-bars md:!hidden text-2xl cursor-pointer mr-2"></i>
+        </div>
+    </nav>
+
 
 
     <div class="">
@@ -119,9 +177,10 @@
     <section
         class="max-w-7xl w-full mx-auto md:mt-24 mt-10 p-5 flex items-center justify-center md:gap-20 gap-6 md:flex-row flex-col">
         <div class="md:max-w-[50%] w-full">
-            <img data-aos="zoom-in"  src="/docs/assets/images/car (5).jpg" class="w-full rounded-xl md:min-h-[35rem] object-cover" alt="">
+            <img data-aos="zoom-in" src="/docs/assets/images/car (5).jpg"
+                class="w-full rounded-xl md:min-h-[35rem] object-cover" alt="">
         </div>
-        <div data-aos="fade-up" data-aos-delay="200"  class="md:max-w-[50%] w-full">
+        <div data-aos="fade-up" data-aos-delay="200" class="md:max-w-[50%] w-full">
             <div class="inline-flex items-center gap-2 border p-1 border-zinc-300 rounded-full">
                 <div class="flex items-center justify-center rounded-full w-10 h-10 bg-yellow-100">
                     <i class="fa-solid fa-car-rear text-zinc-700"></i>
@@ -155,7 +214,7 @@
                     <p class="text-zinc-200 font-semibold pr-4 text-nowrap">Explore</p>
                 </div>
             </div>
-            <h2  data-aos-delay="100" data-aos="fade-up"
+            <h2 data-aos-delay="100" data-aos="fade-up"
                 class="text-center md:text-5xl text-3xl mt-6 font-semibold text-zinc-200">Fleet Xexrion</h2>
 
             <div data-aos="fade-up" class="md:mt-20 mt-10">
@@ -164,7 +223,7 @@
                         <div class="swiper-slide">
                             <div class="w-full flex items-center justify-center md:gap-14 gap-6 md:flex-row flex-col">
                                 <div class="md:max-w-[50%] w-full">
-                                    <img src="/docs/assets/images/car (5).jpg" class="rounded-xl" />
+                                    <img src="/docs/assets/images/car (5).jpg" class="rounded-xl md:!h-[35rem]" />
                                 </div>
                                 <div class="md:max-w-[50%] w-full">
                                     <h2 class="font-semibold text-4xl tracking-wide text-zinc-100">First Class</h2>
@@ -240,7 +299,7 @@
                         <div class="swiper-slide">
                             <div class="w-full flex items-center justify-center md:gap-14 gap-6 md:flex-row flex-col">
                                 <div class="md:max-w-[50%] w-full">
-                                    <img src="/docs/assets/images/car (6).jpg" class="rounded-xl" />
+                                    <img src="/docs/assets/images/car (6).jpg" class="rounded-xl md:!h-[35rem]" />
                                 </div>
                                 <div class="md:max-w-[50%] w-full">
                                     <h2 class="font-semibold text-4xl tracking-wide text-zinc-100">First Class</h2>
@@ -316,7 +375,7 @@
                         <div class="swiper-slide">
                             <div class="w-full flex items-center justify-center md:gap-14 gap-6 md:flex-row flex-col">
                                 <div class="md:max-w-[50%] w-full">
-                                    <img src="/docs/assets/images/car (7).jpg" class="rounded-xl" />
+                                    <img src="/docs/assets/images/car (7).jpg" class="rounded-xl md:!h-[35rem]" />
                                 </div>
                                 <div class="md:max-w-[50%] w-full">
                                     <h2 class="font-semibold text-4xl tracking-wide text-zinc-100">First Class</h2>
@@ -392,7 +451,7 @@
                         <div class="swiper-slide">
                             <div class="w-full flex items-center justify-center md:gap-14 gap-6 md:flex-row flex-col">
                                 <div class="md:max-w-[50%] w-full">
-                                    <img src="/docs/assets/images/car (8).jpg" class="rounded-xl" />
+                                    <img src="/docs/assets/images/car (8).jpg" class="rounded-xl md:!h-[35rem]" />
                                 </div>
                                 <div class="md:max-w-[50%] w-full">
                                     <h2 class="font-semibold text-4xl tracking-wide text-zinc-100">First Class</h2>
@@ -468,7 +527,7 @@
                         <div class="swiper-slide">
                             <div class="w-full flex items-center justify-center md:gap-14 gap-6 md:flex-row flex-col">
                                 <div class="md:max-w-[50%] w-full">
-                                    <img src="/docs/assets/images/car (9).jpg" class="rounded-xl" />
+                                    <img src="/docs/assets/images/car (9).jpg" class="rounded-xl md:!h-[35rem]" />
                                 </div>
                                 <div class="md:max-w-[50%] w-full">
                                     <h2 class="font-semibold text-4xl tracking-wide text-zinc-100">First Class</h2>
@@ -615,50 +674,6 @@
         </div>
     </section>
 
-    <section class="md:mt-32 bg -[#fffef6] mt-10">
-        <div class="max-w-7xl w-full mx-auto  p-5">
-            <h2 data-aos="fade-up" class="md:text-5xl text-2xl text-center text-zinc-800 font-semibold">
-                WHAT OUR CUSTOMERS
-                SAY</h2>
-
-            <div data-aos="fade-up" class="flex items-center justify-center gap-10 md:mt-20 mt-8 max-w-4xl mx-auto">
-                <button class="cursor-pointer md:block hidden button-prev"><i
-                        class="fa-solid text-2xl text-zinc-800 fa-arrow-left"></i></button>
-                <div class="swiper mySwiperHome">
-                    <div class="swiper-wrapper ">
-                        <div class="swiper-slide">
-                            <div class="flex items-center justify-center flex-col">
-                                <h3 class="md:text-4xl text-2xl text-center leading-tight mb-10 text-zinc-800">
-                                    "My
-                                    experience was nothing short of incredible. The pristine car and
-                                    impeccable
-                                    service made
-                                    my trip unforgettable. I'll be back for more."</h3>
-                                <img src="/docs/assets/images/client1.png" class="!w-12 !h-12" alt="">
-                                <p class="text-zinc-600 mt-3">Mr. Jhon</p>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="flex items-center justify-center flex-col">
-                                <h3 class="md:text-4xl text-2xl text-center leading-tight mb-10 text-zinc-800">
-                                    "My
-                                    experience was nothing short of incredible. The pristine car and
-                                    impeccable
-                                    service made
-                                    my trip unforgettable. I'll be back for more."</h3>
-                                <img src="/docs/assets/images/client1.png" class="!w-12 !h-12" alt="">
-                                <p class="text-zinc-600 mt-3">Aleea Thompson</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <button class="cursor-pointer md:block hidden button-next"><i
-                        class="fa-solid text-2xl text-zinc-800 fa-arrow-right"></i></button>
-            </div>
-
-        </div>
-    </section>
-
     <div class="bg-[#121212] md:py-28 py-14 md:mt-24 mt-10">
         <section class="max-w-7xl w-full mx-auto p-5">
 
@@ -723,6 +738,50 @@
             </div>
         </section>
     </div>
+
+    <section class="md:mt-32 bg -[#fffef6] mt-10">
+        <div class="max-w-7xl w-full mx-auto  p-5">
+            <h2 data-aos="fade-up" class="md:text-5xl text-2xl text-center text-zinc-800 font-semibold">
+                WHAT OUR CUSTOMERS
+                SAY</h2>
+
+            <div data-aos="fade-up" class="flex items-center justify-center gap-10 md:mt-20 mt-8 max-w-4xl mx-auto">
+                <button class="cursor-pointer md:block hidden button-prev"><i
+                        class="fa-solid text-2xl text-zinc-800 fa-arrow-left"></i></button>
+                <div class="swiper mySwiperHome">
+                    <div class="swiper-wrapper ">
+                        <div class="swiper-slide">
+                            <div class="flex items-center justify-center flex-col">
+                                <h3 class="md:text-4xl text-2xl text-center leading-tight mb-10 text-zinc-800">
+                                    "My
+                                    experience was nothing short of incredible. The pristine car and
+                                    impeccable
+                                    service made
+                                    my trip unforgettable. I'll be back for more."</h3>
+                                <img src="/docs/assets/images/client1.png" class="!w-12 !h-12" alt="">
+                                <p class="text-zinc-600 mt-3">Mr. Jhon</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="flex items-center justify-center flex-col">
+                                <h3 class="md:text-4xl text-2xl text-center leading-tight mb-10 text-zinc-800">
+                                    "My
+                                    experience was nothing short of incredible. The pristine car and
+                                    impeccable
+                                    service made
+                                    my trip unforgettable. I'll be back for more."</h3>
+                                <img src="/docs/assets/images/client1.png" class="!w-12 !h-12" alt="">
+                                <p class="text-zinc-600 mt-3">Aleea Thompson</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="cursor-pointer md:block hidden button-next"><i
+                        class="fa-solid text-2xl text-zinc-800 fa-arrow-right"></i></button>
+            </div>
+
+        </div>
+    </section>
 
     <section class="w-full p-5 max-w-7xl mx-auto md:mt-24 mt-10">
         <h2 data-aos="fade-up" class="text-zinc-800 font-semibold md:text-5xl text-center text-2xl">
