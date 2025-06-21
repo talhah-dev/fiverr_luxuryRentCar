@@ -44,6 +44,10 @@ input:user-invalid {
     background: linear-gradient(rgba(0, 0, 0, 0.39), rgba(0, 0, 0, 0.39)), url(/docs/assets/images/car\ \(2\).jpg) center/cover no-repeat;
 }
 
+.fleetBanner {
+    background: linear-gradient(rgba(0, 0, 0, 0.616), rgba(0, 0, 0, 0.623)), url(/docs/assets/images/car\ \(1\).jpg) center/cover no-repeat;
+}
+
 .carBg {
     background: linear-gradient(rgba(0, 0, 0, 0.692), rgba(0, 0, 0, 0.705)), url(/docs/assets/images/car\ \(3\).jpg) center/cover no-repeat;
 }
@@ -70,7 +74,7 @@ input:user-invalid {
     display: block;
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    /* object-fit: cover; */
 }
 
 .swiper {
@@ -104,4 +108,8 @@ input:user-invalid {
 
 .mySwiper .swiper-slide-thumb-active {
     opacity: 1;
+}
+
+.swiper-pagination-bullet{
+        background: var(--swiper-pagination-bullet-inactive-color, #efc360) !important;
 }
