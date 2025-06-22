@@ -3,7 +3,8 @@ const navbar = document.getElementById("navbar");
 navbar.innerHTML = `
     <nav class="absolute top-0 left-0 w-full z-40 transition-all duration-300">
 
-        <div data-aos="fade-down" class="border-b md:flex hidden items-center justify-between border-zinc-400 px-3 max-w-7xl mx-auto py-5">
+        <div data-aos="fade-down"
+            class="border-b md:flex hidden items-center justify-between border-zinc-400 px-3 max-w-7xl mx-auto py-5">
             <div class="flex items-center gap-3">
                 <h2 class="font-semibold text-zinc-100">Follow Us: </h2>
                 <div class="flex items-center gap-5">
@@ -38,11 +39,37 @@ navbar.innerHTML = `
                                 class="hover:text-[#ddb93e] tracking-wide font-medium text-lg transition-all duration-500">About
                                 Us</a>
                         </li>
-                        <li><a href="/services.html"
-                                class="hover:text-[#ddb93e] tracking-wide font-medium text-lg transition-all duration-500">Services</a>
+                        <li class="relative group">
+                            <button
+                                class="dropdownToggle hover:text-[#ddb93e] cursor-pointer flex items-center gap-2 tracking-wide font-medium transition-all duration-500">
+                                Services
+                                <i class="fa-solid fa-angle-down dropdownIcon transition-transform duration-500"></i>
+                            </button>
+                            <div
+                                class="dropdownMenu absolute fadeIn hidden w-40 top-10 left-0 bg-[#080909] z-30 flex-col">
+                                <a href="/services.html"
+                                class="p-5 hover:bg-[#ddb93e] hover:text-white text-nowrap transition-all duration-500 block">Services 1</a>
+                                <a href="#"
+                                class="p-5 hover:bg-[#ddb93e] hover:text-white text-nowrap transition-all duration-500 block">Services 2</a>
+                                <a href="#"
+                                class="p-5 hover:bg-[#ddb93e] hover:text-white text-nowrap transition-all duration-500 block">Services 3</a>
+                            </div>
                         </li>
-                        <li><a href="/fleet.html"
-                                class="hover:text-[#ddb93e] tracking-wide font-medium text-lg transition-all duration-500">Fleet</a>
+                       <li class="relative group">
+                            <button
+                                class="dropdownToggle hover:text-[#ddb93e] cursor-pointer flex items-center gap-2 tracking-wide font-medium transition-all duration-500">
+                                Fleet
+                                <i class="fa-solid fa-angle-down dropdownIcon transition-transform duration-500"></i>
+                            </button>
+                            <div
+                                class="dropdownMenu absolute fadeIn hidden w-40 top-10 left-0 bg-[#080909] z-30 flex-col">
+                                <a href="/fleet.html"
+                                class="p-5 hover:bg-[#ddb93e] hover:text-white text-nowrap transition-all duration-500 block">Fleet 1</a>
+                                <a href="#"
+                                class="p-5 hover:bg-[#ddb93e] hover:text-white text-nowrap transition-all duration-500 block">Fleet 2</a>
+                                <a href="#"
+                                class="p-5 hover:bg-[#ddb93e] hover:text-white text-nowrap transition-all duration-500 block">Fleet 3</a>
+                            </div>
                         </li>
                     </ul>
                 </div>
@@ -58,41 +85,6 @@ navbar.innerHTML = `
         </div>
     </nav>
 
-
-    <nav id="nav"
-        class="fixed bg-white -translate-y-[6rem] overflow-hidden top-0 left-0 w-full z-40 flex items-center justify-center transition-all duration-300">
-        <div class="max-w-7xl mx-auto flex justify-between items-center w-full md:p-5 p-3 md:h-24 h-20">
-            <a data-aos="fade-right" href="/index.html" class="flex items-center justify-center lg:justify-start">
-            <!-- <img src="/docs/assets/images/LogoWhite.png" class="md:h-24 h-20" alt="logo"> -->
-             <h2 class="text-black font-semibold text-2xl">Logo</h2>
-            </a>
-            <div data-aos="fade-left" class="md:flex hidden items-center gap-10">
-                <div class="md:flex items-center gap-10 hidden">
-                    <ul class="md:flex hidden items-center text-zinc-800 gap-10">
-                        <li><a href="/index.html" class="hover:text-[#ddb93e] transition-all font-medium  duration-500">Home </a>
-                        </li>
-                        <li><a href="/about.html" class="hover:text-[#ddb93e] transition-all font-medium  duration-500">About Us</a>
-                        </li>
-                        <li><a href="/services.html"
-                                class="hover:text-[#ddb93e] transition-all font-medium  duration-500">Services</a>
-                        </li>
-                        <li><a href="/fleet.html" class="hover:text-[#ddb93e] transition-all font-medium  duration-500">Fleet</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="md:flex items-center justify-center gap-3 hidden">
-                <a href="/contact.html"
-                    class="md:block hidden transition-all font-medium  duration-500 hover:bg-zinc-800 hover:border-zinc-800 hover:text-white font-medium border-2 border-zinc-600 px-8 py-3 rounded-lg text-zinc-700 bg-transparent">Contact
-                    Us</a>
-            </div>
-
-            <i data-aos="fade-left"
-                class="fa-solid mobileMenuBtn text-zinc-800 fa-bars md:!hidden text-2xl cursor-pointer mr-2"></i>
-        </div>
-    </nav>
-
     <div id="mobileMenu"
         class="fixed left-0 top-0 bg-white max-w-[30rem] w-0 overflow-hidden h-screen z-50 transition-all duration-500">
         <div class="flex items-end justify-end p-5">
@@ -100,13 +92,59 @@ navbar.innerHTML = `
         </div>
         <div class="p-6">
             <ul class="flex relative z-50 text-zinc-800 flex-col gap-7">
-                <li><a href="/index.html" class="hover:text-[#ddb93e] font-medium text-nowrap transition-all duration-500">Home </a>
+                <li><a href="/index.html"
+                        class="hover:text-[#ddb93e] font-medium text-nowrap transition-all duration-500">Home </a>
                 </li>
-                <li><a href="/about.html" class="hover:text-[#ddb93e] font-medium text-nowrap transition-all duration-500">About Us</a>
+                <li><a href="/about.html"
+                        class="hover:text-[#ddb93e] font-medium text-nowrap transition-all duration-500">About Us</a>
                 </li>
-                <li><a href="/services.html" class="hover:text-[#ddb93e] font-medium text-nowrap transition-all duration-500">Services</a>
+                <li>
+                    <button onclick="toggleAccordion(5)"
+                        class="w-full cursor-pointer flex justify-between items-center">
+                        <p class="text-lg text-start font-medium">Fleet</p>
+                        <i id="icon-5"
+                            class="fa-solid fa-angle-down text-gray-600 transition-transform duration-300"></i>
+                    </button>
+                    <div id="content-5" class="max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
+                        <ul class="pt-3 text-zinc-600 pl-5 space-y-4">
+                            <li><a href="/fleet.html"
+                                    class="hover:text-[#ddb93e] font-medium text-nowrap transition-all duration-500">Fleet
+                                    1</a>
+                            </li>
+                            <li><a href="/fleet.html"
+                                    class="hover:text-[#ddb93e] font-medium text-nowrap transition-all duration-500">Fleet
+                                    2</a>
+                            </li>
+                            <li><a href="/fleet.html"
+                                    class="hover:text-[#ddb93e] font-medium text-nowrap transition-all duration-500">Fleet
+                                    2</a>
+                            </li>
+                        </ul>
+                    </div>
                 </li>
-                <li><a href="/fleet.html" class="hover:text-[#ddb93e] font-medium text-nowrap transition-all duration-500">Fleet</a>
+                <li>
+                    <button onclick="toggleAccordion(6)"
+                        class="w-full cursor-pointer flex justify-between items-center">
+                        <p class="text-lg text-start font-medium">Services</p>
+                        <i id="icon-6"
+                            class="fa-solid fa-angle-down text-gray-600 transition-transform duration-300"></i>
+                    </button>
+                    <div id="content-6" class="max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
+                        <ul class="pt-3 text-zinc-600 pl-5 space-y-4">
+                            <li><a href="/fleet.html"
+                                    class="hover:text-[#ddb93e] font-medium text-nowrap transition-all duration-500">Services
+                                    1</a>
+                            </li>
+                            <li><a href="/fleet.html"
+                                    class="hover:text-[#ddb93e] font-medium text-nowrap transition-all duration-500">Services
+                                    2</a>
+                            </li>
+                            <li><a href="/fleet.html"
+                                    class="hover:text-[#ddb93e] font-medium text-nowrap transition-all duration-500">Services
+                                    2</a>
+                            </li>
+                        </ul>
+                    </div>
                 </li>
             </ul>
             <a href="/contact.html"
@@ -119,7 +157,6 @@ navbar.innerHTML = `
 
 const mobileMenuBtn = document.querySelectorAll(".mobileMenuBtn");
 const mobileMenu = document.getElementById("mobileMenu");
-const nav = document.getElementById("nav");
 const mobileMenuCloseBtns = document.querySelectorAll(".mobileMenuCloseBtn");
 
 mobileMenuCloseBtns.forEach((btn) => {
@@ -134,13 +171,37 @@ mobileMenuBtn.forEach((btn) => {
     });
 });
 
-document.addEventListener("DOMContentLoaded", function () {
-    window.addEventListener("scroll", function () {
-        if (window.scrollY > 500) {
-            nav.style.transform = "translateY(0rem)";
-            nav.classList.remove("-translate-y-[6rem]")
-        } else {
-            nav.style.transform = "translateY(-6rem)";
+
+// drop down
+const dropdownToggles = document.querySelectorAll('.dropdownToggle');
+
+dropdownToggles.forEach(toggle => {
+    const parent = toggle.closest('li');
+    const menu = parent.querySelector('.dropdownMenu');
+    const icon = toggle.querySelector('.dropdownIcon');
+
+    toggle.addEventListener('click', (e) => {
+        e.stopPropagation(); // prevent bubbling to document
+        menu.classList.toggle('hidden');
+        icon.classList.toggle('rotate-180');
+
+        // Close others if you want only one open at a time
+        dropdownToggles.forEach(otherToggle => {
+            if (otherToggle !== toggle) {
+                const otherParent = otherToggle.closest('li');
+                const otherMenu = otherParent.querySelector('.dropdownMenu');
+                const otherIcon = otherToggle.querySelector('.dropdownIcon');
+                otherMenu.classList.add('hidden');
+                otherIcon.classList.remove('rotate-180');
+            }
+        });
+    });
+
+    // Optional: Close dropdown when clicking outside
+    document.addEventListener('click', (event) => {
+        if (!parent.contains(event.target)) {
+            menu.classList.add('hidden');
+            icon.classList.remove('rotate-180');
         }
     });
 });
