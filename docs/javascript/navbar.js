@@ -46,13 +46,17 @@ navbar.innerHTML = `
                                 <i class="fa-solid fa-angle-down dropdownIcon transition-transform duration-500"></i>
                             </button>
                             <div
-                                class="dropdownMenu absolute fadeIn hidden w-40 top-10 left-0 bg-[#080909] z-30 flex-col">
+                                class="dropdownMenu absolute fadeIn hidden w-60 top-10 left-0 bg-[#080909] z-30 flex-col">
                                 <a href="/services.html"
-                                class="p-5 hover:bg-[#ddb93e] hover:text-white text-nowrap transition-all duration-500 block">Services 1</a>
+                                class="p-5 hover:bg-[#ddb93e] hover:text-white text-nowrap transition-all duration-500 block">Airport Transfer</a>
                                 <a href="#"
-                                class="p-5 hover:bg-[#ddb93e] hover:text-white text-nowrap transition-all duration-500 block">Services 2</a>
+                                class="p-5 hover:bg-[#ddb93e] hover:text-white text-nowrap transition-all duration-500 block">Weddings</a>
                                 <a href="#"
-                                class="p-5 hover:bg-[#ddb93e] hover:text-white text-nowrap transition-all duration-500 block">Services 3</a>
+                                class="p-5 hover:bg-[#ddb93e] hover:text-white text-nowrap transition-all duration-500 block">Meet & Greet</a>
+                                <a href="#"
+                                class="p-5 hover:bg-[#ddb93e] hover:text-white text-nowrap transition-all duration-500 block">Luxury Tours</a>
+                                <a href="#"
+                                class="p-5 hover:bg-[#ddb93e] hover:text-white text-nowrap transition-all duration-500 block">Lifestyle Mangment</a>
                             </div>
                         </li>
                        <li class="relative group">
