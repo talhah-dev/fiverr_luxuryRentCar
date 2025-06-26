@@ -135,17 +135,20 @@ navbar.innerHTML = `
                     </button>
                     <div id="content-6" class="max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
                         <ul class="pt-3 text-zinc-600 pl-5 space-y-4">
-                            <li><a href="/fleet.html"
-                                    class="hover:text-[#ddb93e] font-medium text-nowrap transition-all duration-500">Services
-                                    1</a>
+                            <li><a href="/airport.html"
+                                    class="hover:text-[#ddb93e] font-medium text-nowrap transition-all duration-500">Airport Transfer</a>
                             </li>
-                            <li><a href="/fleet.html"
-                                    class="hover:text-[#ddb93e] font-medium text-nowrap transition-all duration-500">Services
-                                    2</a>
+                            <li><a href="/airport.html"
+                                    class="hover:text-[#ddb93e] font-medium text-nowrap transition-all duration-500">Weddings</a>
                             </li>
-                            <li><a href="/fleet.html"
-                                    class="hover:text-[#ddb93e] font-medium text-nowrap transition-all duration-500">Services
-                                    2</a>
+                            <li><a href="/airport.html"
+                                    class="hover:text-[#ddb93e] font-medium text-nowrap transition-all duration-500">Meet & Greet</a>
+                            </li>
+                            <li><a href="/airport.html"
+                                    class="hover:text-[#ddb93e] font-medium text-nowrap transition-all duration-500">Luxury Tours</a>
+                            </li>
+                            <li><a href="/airport.html"
+                                    class="hover:text-[#ddb93e] font-medium text-nowrap transition-all duration-500">Lifestyle Mangment</a>
                             </li>
                         </ul>
                     </div>
