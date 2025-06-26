@@ -40,13 +40,13 @@ navbar.innerHTML = `
                                 Us</a>
                         </li>
                         <li class="relative group">
-                            <button
+                            <a href="/services.html"
                                 class="dropdownToggle hover:text-[#ddb93e] cursor-pointer flex items-center gap-2 tracking-wide font-medium transition-all duration-500">
                                 Services
                                 <i class="fa-solid fa-angle-down dropdownIcon transition-transform duration-500"></i>
-                            </button>
+                            </a>
                             <div
-                                class="dropdownMenu absolute fadeIn hidden w-60 top-10 left-0 bg-[#080909] z-30 flex-col">
+                                class="dropdownMenu absolute fadeIn group-hover:flex hidden w-60 top-6 left-0 bg-[#080909] z-30 flex-col">
                                 <a href="/services.html"
                                 class="p-5 hover:bg-[#ddb93e] hover:text-white text-nowrap transition-all duration-500 block">Airport Transfer</a>
                                 <a href="#"
@@ -60,13 +60,13 @@ navbar.innerHTML = `
                             </div>
                         </li>
                        <li class="relative group">
-                            <button
+                            <a href="/fleet.html"
                                 class="dropdownToggle hover:text-[#ddb93e] cursor-pointer flex items-center gap-2 tracking-wide font-medium transition-all duration-500">
                                 Fleet
                                 <i class="fa-solid fa-angle-down dropdownIcon transition-transform duration-500"></i>
-                            </button>
+                            </a>
                             <div
-                                class="dropdownMenu absolute fadeIn hidden w-40 top-10 left-0 bg-[#080909] z-30 flex-col">
+                                class="dropdownMenu absolute fadeIn group-hover:flex hidden w-40 top-6 left-0 bg-[#080909] z-30 flex-col">
                                 <a href="/fleet.html"
                                 class="p-5 hover:bg-[#ddb93e] hover:text-white text-nowrap transition-all duration-500 block">Fleet 1</a>
                                 <a href="#"
