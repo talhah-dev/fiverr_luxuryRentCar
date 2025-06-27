@@ -66,14 +66,16 @@ navbar.innerHTML = `
                                 <i class="fa-solid fa-angle-down dropdownIcon transition-transform duration-500"></i>
                             </a>
                             <div
-                                class="dropdownMenu absolute fadeIn group-hover:flex hidden w-40 top-6 left-0 bg-[#080909] z-30 flex-col">
-                                <a href="/fleet.html"
-                                class="p-5 hover:bg-[#ddb93e] hover:text-white text-nowrap transition-all duration-500 block">Fleet 1</a>
+                                class="dropdownMenu absolute fadeIn group-hover:flex hidden w-48 top-6 left-0 bg-[#080909] z-30 flex-col">
+                                <a href="/bmwi7.html"
+                                class="p-5 hover:bg-[#ddb93e] hover:text-white text-nowrap transition-all duration-500 block"> BMW I7</a>
                                 <a href="#"
-                                class="p-5 hover:bg-[#ddb93e] hover:text-white text-nowrap transition-all duration-500 block">Fleet 2</a>
-                                <a href="#"
-                                class="p-5 hover:bg-[#ddb93e] hover:text-white text-nowrap transition-all duration-500 block">Fleet 3</a>
+                                class="p-5 hover:bg-[#ddb93e] hover:text-white text-nowrap transition-all duration-500 block">Mercedes S class</a>
+                              
                             </div>
+                        </li>
+                        <li><a href="/book-ride.html"
+                                class="hover:text-[#ddb93e] tracking-wide font-medium text-lg transition-all duration-500">Book Ride</a>
                         </li>
                     </ul>
                 </div>
@@ -102,6 +104,9 @@ navbar.innerHTML = `
                 <li><a href="/about.html"
                         class="hover:text-[#ddb93e] font-medium text-nowrap transition-all duration-500">About Us</a>
                 </li>
+                <li><a href="/book-ride.html"
+                        class="hover:text-[#ddb93e] font-medium text-nowrap transition-all duration-500">Book a Ride</a>
+                </li>
                 <li>
                     <button onclick="toggleAccordion(5)"
                         class="w-full cursor-pointer flex justify-between items-center">
@@ -111,17 +116,11 @@ navbar.innerHTML = `
                     </button>
                     <div id="content-5" class="max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
                         <ul class="pt-3 text-zinc-600 pl-5 space-y-4">
-                            <li><a href="/fleet.html"
-                                    class="hover:text-[#ddb93e] font-medium text-nowrap transition-all duration-500">Fleet
-                                    1</a>
+                            <li><a href="/bmwi7.html"
+                                    class="hover:text-[#ddb93e] font-medium text-nowrap transition-all duration-500"> BMW I7</a>
                             </li>
                             <li><a href="/fleet.html"
-                                    class="hover:text-[#ddb93e] font-medium text-nowrap transition-all duration-500">Fleet
-                                    2</a>
-                            </li>
-                            <li><a href="/fleet.html"
-                                    class="hover:text-[#ddb93e] font-medium text-nowrap transition-all duration-500">Fleet
-                                    2</a>
+                                    class="hover:text-[#ddb93e] font-medium text-nowrap transition-all duration-500">Mercedes S class</a>
                             </li>
                         </ul>
                     </div>

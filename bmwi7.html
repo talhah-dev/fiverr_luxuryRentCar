@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car</title>
+
+    <!-- Favicons -->
+    <link rel="shortcut icon" href="/docs/assets/images/favicon.png" type="image/x-icon">
+
+    <!-- Styles & Scripts -->
+    <link rel="stylesheet" href="/docs/Style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://unpkg.com/lenis@1.3.1/dist/lenis.css">
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+</head>
+
+
+<body class="">
+
+    <div id="bottomToTopScroll"></div>
+    <div id="navbar"></div>
+    <div class="md:h-44 h-20 bg-zinc-900 w-full"></div>
+
+    <section class="relative bg-zinc-900 w-full  overflow-hidden">
+        <!-- Content Overlay -->
+        <div class="relative z-10 max-w-7xl mx-auto px-5  gap-5 md:my-20 my-12">
+            <div class="text-center relative flex items-center justify-center  flex-col">
+                <h1 data-aos="fade-up" data-aos-delay="100"
+                    class="textShadow text-zinc-200 font-bold text-4xl mb-5 xl:text-7xl poppins lg:text-6xl capitalize leading-tight">
+                    Luxury Class
+                </h1>
+                <p data-aos="fade-up" data-aos-delay="200"
+                    class=" leading-7 text-zinc-200 max-w-6xl lg:text-xl text-lg tracking-wider mb-9">
+                    Our luxury cars are designed to provide the ultimate driving experience. With sleek designs,
+                    advanced technology,
+                    and exceptional performance, our cars are the epitome of style and sophistication.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <div class="p-4">
+        <div class="swiper mySwiper max-w-7xl w-full mx-auto md:mt-20 mt-3">
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide !opacity-100">
+                    <img src="/docs/assets/images/insideCarImage1.jpg" class="w-full object-cover rounded-xl " alt="">
+                </div>
+                <div class="swiper-slide !opacity-100">
+                    <img src="/docs/assets/images/car-3.jpg" class="w-full object-cover rounded-xl " alt="">
+                </div>
+                <div class="swiper-slide !opacity-100">
+                    <img src="/docs/assets/images/insideCarImage1.jpg" class="w-full object-cover rounded-xl " alt="">
+                </div>
+                <div class="swiper-slide !opacity-100">
+                    <img src="/docs/assets/images/car-3.jpg" class="w-full object-cover rounded-xl " alt="">
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <section
+        class="max-w-7xl w-full mx-auto md:mt-24 mt-2 p-4 flex items-start justify-center md:gap-32 gap-6 md:flex-row flex-col">
+        <div class="md:max-w-[65%] w-full">
+            <h2 class="text-zinc-800 mt-5 leading-tight font-semibold md:text-5xl text-3xl">Book Your Business Class
+            </h2>
+            <h2 class="text-2xl mt-10 font-bold text-zinc-700">BMW 7 Series</h2>
+            <p class="text-zinc-500 mt-2">Mercedes-Benz E-Class, BMW 5 Series, Cadillac XTS or similar</p>
+            <div class="mb-4 mt-5 mx-auto text-center w-full flex items-center flex-wrap gap-2">
+                <div class="flex justify-center items-center gap-2 rounded-full">
+                    <div class="flex items-center justify-center rounded-full md:w-10 w-8 md:h-10 h-8 bg-zinc-200">
+                        <i class="fa-solid fa-suitcase-rolling text-zinc-800"></i>
+                    </div>
+                    <p class="text-zinc-600 md:text-[16px] text-sm md:font-semibold pr-4 text-nowrap">
+                        Luggage: 2</p>
+                </div>
+                <div class="flex justify-center items-center gap-2 rounded-full">
+                    <div class="flex items-center justify-center rounded-full md:w-10 w-8 md:h-10 h-8 bg-zinc-200">
+                        <i class="fa-solid fa-people-arrows text-zinc-800"></i>
+                    </div>
+                    <p class="text-zinc-600 md:text-[16px] text-sm md:font-semibold pr-4 text-nowrap">
+                        Paseenger: 4</p>
+                </div>
+            </div>
+            <img src="/docs/assets/images/b-class.jpg" class="w-full rounded-lg" />
+        </div>
+        <div data-aos="fade-up" data-aos-delay="200" class="md:max-w-[35%] w-full">
+            <div data-aos="fade-up" class="grid grid-cols-1 gap-4 myShadow md:p-8 p-3 rounded-lg">
+                <div class="border-b border-zinc-300 pb-4">
+                    <p class="text-zinc-800 font-medium text-lg">Hourly rate (minimum 3 hours): $29</p>
+                </div>
+                <div class="border-b border-zinc-300 pt-3 pb-4">
+                    <p class="text-zinc-800 font-medium text-lg">Day rate (8 hours): $136</p>
+                </div>
+                <div class="pb-4 pt-3">
+                    <p class="text-zinc-800 font-medium text-lg">Heathrow to Central London: $780</p>
+                </div>
+
+                <a href="/book-ride.html"
+                    class="bg-[#efc360] block w-full text-center rounded-lg transition-all duration-500 hover:opacity-80 cursor-pointer text-black font-medium p-3.5">Book
+                    Now</a>
+            </div>
+            <div class="mt-8 flex items-center flex-wrap gap-5">
+                <div class="flex justify-center items-center gap-2 rounded-full">
+                    <div class="flex items-center justify-center rounded-full md:w-10 w-8 md:h-10 h-8 bg-zinc-200">
+                        <i class="fa-solid fa-people-arrows text-zinc-800"></i>
+                    </div>
+                    <p class="text-zinc-600 md:text-[16px] text-sm md:font-semibold pr-4 text-nowrap">
+                        Meet & Greet included</p>
+                </div>
+                <div class="flex justify-center items-center gap-2 rounded-full">
+                    <div class="flex items-center justify-center rounded-full md:w-10 w-8 md:h-10 h-8 bg-zinc-200">
+                        <i class="fa-solid fa-phone-slash text-zinc-800"></i>
+                    </div>
+                    <p class="text-zinc-600 md:text-[16px] text-sm md:font-semibold pr-4 text-nowrap">
+                        Free cancellation</p>
+                </div>
+                <div class="flex justify-center items-center gap-2 rounded-full">
+                    <div class="flex items-center justify-center rounded-full md:w-10 w-8 md:h-10 h-8 bg-zinc-200">
+                        <i class="fa-solid fa-hourglass-half text-zinc-800"></i>
+                    </div>
+                    <p class="text-zinc-600 md:text-[16px] text-sm md:font-semibold pr-4 text-nowrap">
+                        Free Waiting time</p>
+                </div>
+                <div class="flex justify-center items-center gap-2 rounded-full">
+                    <div class="flex items-center justify-center rounded-full md:w-10 w-8 md:h-10 h-8 bg-zinc-200">
+                        <i class="fa-solid fa-user-shield text-zinc-800"></i>
+                    </div>
+                    <p class="text-zinc-600 md:text-[16px] text-sm md:font-semibold pr-4 text-nowrap">
+                        Safe and secure travel</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="p-5 md:mt-20 mt-8 mx-auto w-full max-w-7xl">
+        <div data-aos="fade-up" class="flex items-center md:justify-between justify-center">
+            <h2 class="text-zinc-800 leading-tight text-center font-semibold md:text-5xl text-3xl">Related Cars</h2>
+            <a href="/fleet.html"
+                class="text-zinc-800 font-medium text-lg md:flex hidden items-center gap-2 hover:text-[#efc360] transition-all duration-500">View
+                All Fleet <i class="fa-solid fa-arrow-right text-sm"></i></a>
+        </div>
+        <div class="grid md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-6 gap-y-6 md:mt-10 mt-6">
+            <div data-aos="fade-up">
+                <div class=" border border-zinc-300 rounded-lg pb-4 car-card" data-index="0">
+                    <div class="px-5 pt-2">
+                        <h2 class="text-2xl mt-3 font-semibold text-zinc-700">BMW 7 Series</h2>
+                        <p class="text-zinc-500 mt-3 pb-5">Mercedes-Benz E-Class, BMW 5 Series, Cadillac XTS or similar
+                        </p>
+                        <img src="/docs/assets/images/car-2.png" class="mx-auto h-32" alt="">
+                    </div>
+                </div>
+            </div>
+            <div data-aos="fade-up" data-aos-delay="100">
+                <div class=" border border-zinc-300 rounded-lg pb-4 car-card" data-index="0">
+                    <div class="px-5 pt-2">
+                        <h2 class="text-2xl mt-3 font-semibold text-zinc-700">BMW 7 Series</h2>
+                        <p class="text-zinc-500 mt-3 pb-5">Mercedes-Benz E-Class, BMW 5 Series, Cadillac XTS or similar
+                        </p>
+                        <img src="/docs/assets/images/car-2.png" class="mx-auto h-32" alt="">
+                    </div>
+                </div>
+            </div>
+            <div data-aos-delay="200" data-aos="fade-up">
+                <div class=" border border-zinc-300 rounded-lg pb-4 car-card" data-index="0">
+                    <div class="px-5 pt-2">
+                        <h2 class="text-2xl mt-3 font-semibold text-zinc-700">BMW 7 Series</h2>
+                        <p class="text-zinc-500 mt-3 pb-5">Mercedes-Benz E-Class, BMW 5 Series, Cadillac XTS or similar
+                        </p>
+                        <img src="/docs/assets/images/car-2.png" class="mx-auto h-32" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ready to Go? -->
+    <div class="carBg md:mt-28 mt-10">
+        <section class="max-w-7xl md:rounded-xl  w-full md:py-32 py-20 mx-auto">
+            <div class=" w-full text-center  p-5 md:px-16">
+                <h2 data-aos="fade-up" class="md:text-6xl text-3xl font-semibold text-zinc-100">Ready to Go?</h2>
+                <p data-aos="fade-up" data-aos-delay="100" class="text-2xl text-zinc-300 md:mt-4 mt-2 mb-5 md:mb-8">Book
+                    your trip
+                    wherever you are and ride with us now!</p>
+                <div data-aos="fade-up" class="" data-aos-delay="200">
+                    <a href="/book-ride.html"
+                        class="bg-white transition-all duration-500 hover:opacity-80 rounded-full px-8 py-2 font-medium">Book
+                        Now</a>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <div class="md:pt-24 bg-zinc-900 pt-10" id="footer"></div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script src="https://unpkg.com/lenis@1.3.1/dist/lenis.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script src="./docs/javascript/global.js"></script>
+    <script src="./docs/javascript/navbar.js"></script>
+    <script src="./docs/javascript/footer.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            loop: true,
+            spaceBetween: 30,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+            breakpoints: {
+                0: {
+                    slidesPerView: 1,
+                    spaceBetween: 20,
+                },
+                1024: {
+                    slidesPerView: 2,
+                    spaceBetween: 30,
+                },
+            }
+        });
+
+    </script>
+</body>
+
+</html>

@@ -17,9 +17,14 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://unpkg.com/lenis@1.3.1/dist/lenis.css">
     <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
 
+<style>
+    .mySwiper .swiper-slide {
+        opacity: 1;
+    }
+</style>
 
 <body class="">
 
@@ -49,23 +54,15 @@
     <section class="max-w-7xl w-full mx-auto md:mt-24 mt-10 p-5">
         <div class="grid md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-6 gap-y-6 ">
             <div data-aos="fade-up">
-                <div class=" border border-zinc-300 rounded-lg pb-4">
-                    <img src="/docs/assets/images/car1.jpg" class="rounded-t-lg" alt="">
+                <div class=" border border-zinc-300 rounded-lg pb-4 car-card" data-index="0">
+                    <!-- <img src="/docs/assets/images/car1.jpg" class="rounded-t-lg" alt=""> -->
                     <div class="px-5 pt-2">
                         <h2 class="text-2xl mt-3 font-semibold text-zinc-700">BMW 7 Series</h2>
                         <p class="text-zinc-400 font-medium text-lg">$85 per hour</p>
                         <p class="text-zinc-500 mt-3 pb-5">Lorem ipsum dolor sit amet
                             consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur.</p>
                         <img src="/docs/assets/images/car-2.png" class="mx-auto h-32" alt="">
-                        <div class="mt-8 mx-auto text-center w-full flex items-center justify-center gap-2">
-                            <div class="flex justify-center items-center gap-2 rounded-full">
-                                <div
-                                    class="flex items-center justify-center rounded-full md:w-10 w-8 md:h-10 h-8 bg-zinc-200">
-                                    <i class="fa-solid fa-people-arrows text-zinc-800"></i>
-                                </div>
-                                <p class="text-zinc-600 md:text-[16px] text-sm md:font-semibold pr-4 text-nowrap">
-                                    Paseenger: 4</p>
-                            </div>
+                        <div class="mt-8 mx-auto text-center w-full flex items-center justify-center flex-wrap gap-2">
                             <div class="flex justify-center items-center gap-2 rounded-full">
                                 <div
                                     class="flex items-center justify-center rounded-full md:w-10 w-8 md:h-10 h-8 bg-zinc-200">
@@ -74,8 +71,16 @@
                                 <p class="text-zinc-600 md:text-[16px] text-sm md:font-semibold pr-4 text-nowrap">
                                     Luggage: 2</p>
                             </div>
+                            <div class="flex justify-center items-center gap-2 rounded-full">
+                                <div
+                                    class="flex items-center justify-center rounded-full md:w-10 w-8 md:h-10 h-8 bg-zinc-200">
+                                    <i class="fa-solid fa-people-arrows text-zinc-800"></i>
+                                </div>
+                                <p class="text-zinc-600 md:text-[16px] text-sm md:font-semibold pr-4 text-nowrap">
+                                    Paseenger: 4</p>
+                            </div>
                         </div>
-                        <a href="/contact.html"
+                        <a href="/book-ride.html"
                             class="w-full lg:w-auto mt-5 flex items-center justify-center gap-3 py-3 px-10 font-medium text-center text-zinc-800 rounded-lg font-medium bg-[#efc360] hover:opacity-80 transition-all duration-500">
                             Book Now
                         </a>
@@ -83,23 +88,15 @@
                 </div>
             </div>
             <div data-aos="fade-up" data-aos-delay="100">
-                <div class=" border border-zinc-300 rounded-lg pb-4">
-                    <img src="/docs/assets/images/car5.jpg" class="rounded-t-lg" alt="">
+                <div class=" border border-zinc-300 rounded-lg pb-4 car-card" data-index="1">
+                    <!-- <img src="/docs/assets/images/car5.jpg" class="rounded-t-lg" alt=""> -->
                     <div class="px-5 pt-2">
                         <h2 class="text-2xl mt-3 font-semibold text-zinc-700">BMW 7 Series</h2>
                         <p class="text-zinc-400 font-medium text-lg">$85 per hour</p>
                         <p class="text-zinc-500 mt-3 pb-5">Lorem ipsum dolor sit amet
                             consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur.</p>
                         <img src="/docs/assets/images/car-2.png" class="mx-auto h-32" alt="">
-                        <div class="mt-8 mx-auto text-center w-full flex items-center justify-center gap-2">
-                            <div class="flex justify-center items-center gap-2 rounded-full">
-                                <div
-                                    class="flex items-center justify-center rounded-full md:w-10 w-8 md:h-10 h-8 bg-zinc-200">
-                                    <i class="fa-solid fa-people-arrows text-zinc-800"></i>
-                                </div>
-                                <p class="text-zinc-600 md:text-[16px] text-sm md:font-semibold pr-4 text-nowrap">
-                                    Paseenger: 4</p>
-                            </div>
+                        <div class="mt-8 mx-auto text-center w-full flex items-center justify-center flex-wrap gap-2">
                             <div class="flex justify-center items-center gap-2 rounded-full">
                                 <div
                                     class="flex items-center justify-center rounded-full md:w-10 w-8 md:h-10 h-8 bg-zinc-200">
@@ -108,8 +105,16 @@
                                 <p class="text-zinc-600 md:text-[16px] text-sm md:font-semibold pr-4 text-nowrap">
                                     Luggage: 2</p>
                             </div>
+                            <div class="flex justify-center items-center gap-2 rounded-full">
+                                <div
+                                    class="flex items-center justify-center rounded-full md:w-10 w-8 md:h-10 h-8 bg-zinc-200">
+                                    <i class="fa-solid fa-people-arrows text-zinc-800"></i>
+                                </div>
+                                <p class="text-zinc-600 md:text-[16px] text-sm md:font-semibold pr-4 text-nowrap">
+                                    Paseenger: 4</p>
+                            </div>
                         </div>
-                        <a href="/contact.html"
+                        <a href="/book-ride.html"
                             class="w-full lg:w-auto mt-5 flex items-center justify-center gap-3 py-3 px-10 font-medium text-center text-zinc-800 rounded-lg font-medium bg-[#efc360] hover:opacity-80 transition-all duration-500">
                             Book Now
                         </a>
@@ -117,23 +122,15 @@
                 </div>
             </div>
             <div data-aos-delay="200" data-aos="fade-up">
-                <div class=" border border-zinc-300 rounded-lg pb-4">
-                    <img src="/docs/assets/images/car6.jpg" class="rounded-t-lg" alt="">
+                <div class=" border border-zinc-300 rounded-lg pb-4 car-card" data-index="2">
+                    <!-- <img src="/docs/assets/images/car6.jpg" class="rounded-t-lg" alt=""> -->
                     <div class="px-5 pt-2">
                         <h2 class="text-2xl mt-3 font-semibold text-zinc-700">BMW 7 Series</h2>
                         <p class="text-zinc-400 font-medium text-lg">$85 per hour</p>
                         <p class="text-zinc-500 mt-3 pb-5">Lorem ipsum dolor sit amet
                             consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur.</p>
                         <img src="/docs/assets/images/car-2.png" class="mx-auto h-32" alt="">
-                        <div class="mt-8 mx-auto text-center w-full flex items-center justify-center gap-2">
-                            <div class="flex justify-center items-center gap-2 rounded-full">
-                                <div
-                                    class="flex items-center justify-center rounded-full md:w-10 w-8 md:h-10 h-8 bg-zinc-200">
-                                    <i class="fa-solid fa-people-arrows text-zinc-800"></i>
-                                </div>
-                                <p class="text-zinc-600 md:text-[16px] text-sm md:font-semibold pr-4 text-nowrap">
-                                    Paseenger: 4</p>
-                            </div>
+                        <div class="mt-8 mx-auto text-center w-full flex items-center justify-center flex-wrap gap-2">
                             <div class="flex justify-center items-center gap-2 rounded-full">
                                 <div
                                     class="flex items-center justify-center rounded-full md:w-10 w-8 md:h-10 h-8 bg-zinc-200">
@@ -142,8 +139,16 @@
                                 <p class="text-zinc-600 md:text-[16px] text-sm md:font-semibold pr-4 text-nowrap">
                                     Luggage: 2</p>
                             </div>
+                            <div class="flex justify-center items-center gap-2 rounded-full">
+                                <div
+                                    class="flex items-center justify-center rounded-full md:w-10 w-8 md:h-10 h-8 bg-zinc-200">
+                                    <i class="fa-solid fa-people-arrows text-zinc-800"></i>
+                                </div>
+                                <p class="text-zinc-600 md:text-[16px] text-sm md:font-semibold pr-4 text-nowrap">
+                                    Paseenger: 4</p>
+                            </div>
                         </div>
-                        <a href="/contact.html"
+                        <a href="/book-ride.html"
                             class="w-full lg:w-auto mt-5 flex items-center justify-center gap-3 py-3 px-10 font-medium text-center text-zinc-800 rounded-lg font-medium bg-[#efc360] hover:opacity-80 transition-all duration-500">
                             Book Now
                         </a>
@@ -151,23 +156,15 @@
                 </div>
             </div>
             <div data-aos="fade-up">
-                <div class=" border border-zinc-300 rounded-lg pb-4">
-                    <img src="/docs/assets/images/car7.jpg" class="rounded-t-lg" alt="">
+                <div class=" border border-zinc-300 rounded-lg pb-4 car-card" data-index="3">
+                    <!-- <img src="/docs/assets/images/car7.jpg" class="rounded-t-lg" alt=""> -->
                     <div class="px-5 pt-2">
                         <h2 class="text-2xl mt-3 font-semibold text-zinc-700">BMW 7 Series</h2>
                         <p class="text-zinc-400 font-medium text-lg">$85 per hour</p>
                         <p class="text-zinc-500 mt-3 pb-5">Lorem ipsum dolor sit amet
                             consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur.</p>
                         <img src="/docs/assets/images/car-2.png" class="mx-auto h-32" alt="">
-                        <div class="mt-8 mx-auto text-center w-full flex items-center justify-center gap-2">
-                            <div class="flex justify-center items-center gap-2 rounded-full">
-                                <div
-                                    class="flex items-center justify-center rounded-full md:w-10 w-8 md:h-10 h-8 bg-zinc-200">
-                                    <i class="fa-solid fa-people-arrows text-zinc-800"></i>
-                                </div>
-                                <p class="text-zinc-600 md:text-[16px] text-sm md:font-semibold pr-4 text-nowrap">
-                                    Paseenger: 4</p>
-                            </div>
+                        <div class="mt-8 mx-auto text-center w-full flex items-center justify-center flex-wrap gap-2">
                             <div class="flex justify-center items-center gap-2 rounded-full">
                                 <div
                                     class="flex items-center justify-center rounded-full md:w-10 w-8 md:h-10 h-8 bg-zinc-200">
@@ -176,8 +173,16 @@
                                 <p class="text-zinc-600 md:text-[16px] text-sm md:font-semibold pr-4 text-nowrap">
                                     Luggage: 2</p>
                             </div>
+                            <div class="flex justify-center items-center gap-2 rounded-full">
+                                <div
+                                    class="flex items-center justify-center rounded-full md:w-10 w-8 md:h-10 h-8 bg-zinc-200">
+                                    <i class="fa-solid fa-people-arrows text-zinc-800"></i>
+                                </div>
+                                <p class="text-zinc-600 md:text-[16px] text-sm md:font-semibold pr-4 text-nowrap">
+                                    Paseenger: 4</p>
+                            </div>
                         </div>
-                        <a href="/contact.html"
+                        <a href="/book-ride.html"
                             class="w-full lg:w-auto mt-5 flex items-center justify-center gap-3 py-3 px-10 font-medium text-center text-zinc-800 rounded-lg font-medium bg-[#efc360] hover:opacity-80 transition-all duration-500">
                             Book Now
                         </a>
@@ -185,23 +190,15 @@
                 </div>
             </div>
             <div data-aos="fade-up" data-aos-delay="100">
-                <div class=" border border-zinc-300 rounded-lg pb-4">
-                    <img src="/docs/assets/images/car8.jpg" class="rounded-t-lg" alt="">
+                <div class=" border border-zinc-300 rounded-lg pb-4 car-card" data-index="4">
+                    <!-- <img src="/docs/assets/images/car8.jpg" class="rounded-t-lg" alt=""> -->
                     <div class="px-5 pt-2">
                         <h2 class="text-2xl mt-3 font-semibold text-zinc-700">BMW 7 Series</h2>
                         <p class="text-zinc-400 font-medium text-lg">$85 per hour</p>
                         <p class="text-zinc-500 mt-3 pb-5">Lorem ipsum dolor sit amet
                             consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur.</p>
                         <img src="/docs/assets/images/car-2.png" class="mx-auto h-32" alt="">
-                        <div class="mt-8 mx-auto text-center w-full flex items-center justify-center gap-2">
-                            <div class="flex justify-center items-center gap-2 rounded-full">
-                                <div
-                                    class="flex items-center justify-center rounded-full md:w-10 w-8 md:h-10 h-8 bg-zinc-200">
-                                    <i class="fa-solid fa-people-arrows text-zinc-800"></i>
-                                </div>
-                                <p class="text-zinc-600 md:text-[16px] text-sm md:font-semibold pr-4 text-nowrap">
-                                    Paseenger: 4</p>
-                            </div>
+                        <div class="mt-8 mx-auto text-center w-full flex items-center justify-center flex-wrap gap-2">
                             <div class="flex justify-center items-center gap-2 rounded-full">
                                 <div
                                     class="flex items-center justify-center rounded-full md:w-10 w-8 md:h-10 h-8 bg-zinc-200">
@@ -210,8 +207,16 @@
                                 <p class="text-zinc-600 md:text-[16px] text-sm md:font-semibold pr-4 text-nowrap">
                                     Luggage: 2</p>
                             </div>
+                            <div class="flex justify-center items-center gap-2 rounded-full">
+                                <div
+                                    class="flex items-center justify-center rounded-full md:w-10 w-8 md:h-10 h-8 bg-zinc-200">
+                                    <i class="fa-solid fa-people-arrows text-zinc-800"></i>
+                                </div>
+                                <p class="text-zinc-600 md:text-[16px] text-sm md:font-semibold pr-4 text-nowrap">
+                                    Paseenger: 4</p>
+                            </div>
                         </div>
-                        <a href="/contact.html"
+                        <a href="/book-ride.html"
                             class="w-full lg:w-auto mt-5 flex items-center justify-center gap-3 py-3 px-10 font-medium text-center text-zinc-800 rounded-lg font-medium bg-[#efc360] hover:opacity-80 transition-all duration-500">
                             Book Now
                         </a>
@@ -219,23 +224,15 @@
                 </div>
             </div>
             <div data-aos-delay="200" data-aos="fade-up">
-                <div class=" border border-zinc-300 rounded-lg pb-4">
-                    <img src="/docs/assets/images/car9.jpg" class="rounded-t-lg" alt="">
+                <div class=" border border-zinc-300 rounded-lg pb-4 car-card" data-index="5">
+                    <!-- <img src="/docs/assets/images/car9.jpg" class="rounded-t-lg" alt=""> -->
                     <div class="px-5 pt-2">
                         <h2 class="text-2xl mt-3 font-semibold text-zinc-700">BMW 7 Series</h2>
                         <p class="text-zinc-400 font-medium text-lg">$85 per hour</p>
                         <p class="text-zinc-500 mt-3 pb-5">Lorem ipsum dolor sit amet
                             consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur.</p>
                         <img src="/docs/assets/images/car-2.png" class="mx-auto h-32" alt="">
-                        <div class="mt-8 mx-auto text-center w-full flex items-center justify-center gap-2">
-                            <div class="flex justify-center items-center gap-2 rounded-full">
-                                <div
-                                    class="flex items-center justify-center rounded-full md:w-10 w-8 md:h-10 h-8 bg-zinc-200">
-                                    <i class="fa-solid fa-people-arrows text-zinc-800"></i>
-                                </div>
-                                <p class="text-zinc-600 md:text-[16px] text-sm md:font-semibold pr-4 text-nowrap">
-                                    Paseenger: 4</p>
-                            </div>
+                        <div class="mt-8 mx-auto text-center w-full flex items-center justify-center flex-wrap gap-2">
                             <div class="flex justify-center items-center gap-2 rounded-full">
                                 <div
                                     class="flex items-center justify-center rounded-full md:w-10 w-8 md:h-10 h-8 bg-zinc-200">
@@ -244,8 +241,16 @@
                                 <p class="text-zinc-600 md:text-[16px] text-sm md:font-semibold pr-4 text-nowrap">
                                     Luggage: 2</p>
                             </div>
+                            <div class="flex justify-center items-center gap-2 rounded-full">
+                                <div
+                                    class="flex items-center justify-center rounded-full md:w-10 w-8 md:h-10 h-8 bg-zinc-200">
+                                    <i class="fa-solid fa-people-arrows text-zinc-800"></i>
+                                </div>
+                                <p class="text-zinc-600 md:text-[16px] text-sm md:font-semibold pr-4 text-nowrap">
+                                    Paseenger: 4</p>
+                            </div>
                         </div>
-                        <a href="/contact.html"
+                        <a href="/book-ride.html"
                             class="w-full lg:w-auto mt-5 flex items-center justify-center gap-3 py-3 px-10 font-medium text-center text-zinc-800 rounded-lg font-medium bg-[#efc360] hover:opacity-80 transition-all duration-500">
                             Book Now
                         </a>
@@ -253,23 +258,15 @@
                 </div>
             </div>
             <div data-aos="fade-up">
-                <div class=" border border-zinc-300 rounded-lg pb-4">
-                    <img src="/docs/assets/images/car10.jpg" class="rounded-t-lg" alt="">
+                <div class=" border border-zinc-300 rounded-lg pb-4 car-card" data-index="6">
+                    <!-- <img src="/docs/assets/images/car10.jpg" class="rounded-t-lg" alt=""> -->
                     <div class="px-5 pt-2">
                         <h2 class="text-2xl mt-3 font-semibold text-zinc-700">BMW 7 Series</h2>
                         <p class="text-zinc-400 font-medium text-lg">$85 per hour</p>
                         <p class="text-zinc-500 mt-3 pb-5">Lorem ipsum dolor sit amet
                             consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur.</p>
                         <img src="/docs/assets/images/car-2.png" class="mx-auto h-32" alt="">
-                        <div class="mt-8 mx-auto text-center w-full flex items-center justify-center gap-2">
-                            <div class="flex justify-center items-center gap-2 rounded-full">
-                                <div
-                                    class="flex items-center justify-center rounded-full md:w-10 w-8 md:h-10 h-8 bg-zinc-200">
-                                    <i class="fa-solid fa-people-arrows text-zinc-800"></i>
-                                </div>
-                                <p class="text-zinc-600 md:text-[16px] text-sm md:font-semibold pr-4 text-nowrap">
-                                    Paseenger: 4</p>
-                            </div>
+                        <div class="mt-8 mx-auto text-center w-full flex items-center justify-center flex-wrap gap-2">
                             <div class="flex justify-center items-center gap-2 rounded-full">
                                 <div
                                     class="flex items-center justify-center rounded-full md:w-10 w-8 md:h-10 h-8 bg-zinc-200">
@@ -278,8 +275,16 @@
                                 <p class="text-zinc-600 md:text-[16px] text-sm md:font-semibold pr-4 text-nowrap">
                                     Luggage: 2</p>
                             </div>
+                            <div class="flex justify-center items-center gap-2 rounded-full">
+                                <div
+                                    class="flex items-center justify-center rounded-full md:w-10 w-8 md:h-10 h-8 bg-zinc-200">
+                                    <i class="fa-solid fa-people-arrows text-zinc-800"></i>
+                                </div>
+                                <p class="text-zinc-600 md:text-[16px] text-sm md:font-semibold pr-4 text-nowrap">
+                                    Paseenger: 4</p>
+                            </div>
                         </div>
-                        <a href="/contact.html"
+                        <a href="/book-ride.html"
                             class="w-full lg:w-auto mt-5 flex items-center justify-center gap-3 py-3 px-10 font-medium text-center text-zinc-800 rounded-lg font-medium bg-[#efc360] hover:opacity-80 transition-all duration-500">
                             Book Now
                         </a>
@@ -287,23 +292,15 @@
                 </div>
             </div>
             <div data-aos="fade-up" data-aos-delay="100">
-                <div class=" border border-zinc-300 rounded-lg pb-4">
-                    <img src="/docs/assets/images/car11.jpg" class="rounded-t-lg" alt="">
+                <div class=" border border-zinc-300 rounded-lg pb-4 car-card" data-index="7">
+                    <!-- <img src="/docs/assets/images/car11.jpg" class="rounded-t-lg" alt=""> -->
                     <div class="px-5 pt-2">
                         <h2 class="text-2xl mt-3 font-semibold text-zinc-700">BMW 7 Series</h2>
                         <p class="text-zinc-400 font-medium text-lg">$85 per hour</p>
                         <p class="text-zinc-500 mt-3 pb-5">Lorem ipsum dolor sit amet
                             consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur.</p>
                         <img src="/docs/assets/images/car-2.png" class="mx-auto h-32" alt="">
-                        <div class="mt-8 mx-auto text-center w-full flex items-center justify-center gap-2">
-                            <div class="flex justify-center items-center gap-2 rounded-full">
-                                <div
-                                    class="flex items-center justify-center rounded-full md:w-10 w-8 md:h-10 h-8 bg-zinc-200">
-                                    <i class="fa-solid fa-people-arrows text-zinc-800"></i>
-                                </div>
-                                <p class="text-zinc-600 md:text-[16px] text-sm md:font-semibold pr-4 text-nowrap">
-                                    Paseenger: 4</p>
-                            </div>
+                        <div class="mt-8 mx-auto text-center w-full flex items-center justify-center flex-wrap gap-2">
                             <div class="flex justify-center items-center gap-2 rounded-full">
                                 <div
                                     class="flex items-center justify-center rounded-full md:w-10 w-8 md:h-10 h-8 bg-zinc-200">
@@ -312,8 +309,16 @@
                                 <p class="text-zinc-600 md:text-[16px] text-sm md:font-semibold pr-4 text-nowrap">
                                     Luggage: 2</p>
                             </div>
+                            <div class="flex justify-center items-center gap-2 rounded-full">
+                                <div
+                                    class="flex items-center justify-center rounded-full md:w-10 w-8 md:h-10 h-8 bg-zinc-200">
+                                    <i class="fa-solid fa-people-arrows text-zinc-800"></i>
+                                </div>
+                                <p class="text-zinc-600 md:text-[16px] text-sm md:font-semibold pr-4 text-nowrap">
+                                    Paseenger: 4</p>
+                            </div>
                         </div>
-                        <a href="/contact.html"
+                        <a href="/book-ride.html"
                             class="w-full lg:w-auto mt-5 flex items-center justify-center gap-3 py-3 px-10 font-medium text-center text-zinc-800 rounded-lg font-medium bg-[#efc360] hover:opacity-80 transition-all duration-500">
                             Book Now
                         </a>
@@ -321,23 +326,15 @@
                 </div>
             </div>
             <div data-aos-delay="200" data-aos="fade-up">
-                <div class=" border border-zinc-300 rounded-lg pb-4">
-                    <img src="/docs/assets/images/car12.jpg" class="rounded-t-lg" alt="">
+                <div class=" border border-zinc-300 rounded-lg pb-4 car-card" data-index="8">
+                    <!-- <img src="/docs/assets/images/car12.jpg" class="rounded-t-lg" alt=""> -->
                     <div class="px-5 pt-2">
                         <h2 class="text-2xl mt-3 font-semibold text-zinc-700">BMW 7 Series</h2>
                         <p class="text-zinc-400 font-medium text-lg">$85 per hour</p>
                         <p class="text-zinc-500 mt-3 pb-5">Lorem ipsum dolor sit amet
                             consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur.</p>
                         <img src="/docs/assets/images/car-2.png" class="mx-auto h-32" alt="">
-                        <div class="mt-8 mx-auto text-center w-full flex items-center justify-center gap-2">
-                            <div class="flex justify-center items-center gap-2 rounded-full">
-                                <div
-                                    class="flex items-center justify-center rounded-full md:w-10 w-8 md:h-10 h-8 bg-zinc-200">
-                                    <i class="fa-solid fa-people-arrows text-zinc-800"></i>
-                                </div>
-                                <p class="text-zinc-600 md:text-[16px] text-sm md:font-semibold pr-4 text-nowrap">
-                                    Paseenger: 4</p>
-                            </div>
+                        <div class="mt-8 mx-auto text-center w-full flex items-center justify-center flex-wrap gap-2">
                             <div class="flex justify-center items-center gap-2 rounded-full">
                                 <div
                                     class="flex items-center justify-center rounded-full md:w-10 w-8 md:h-10 h-8 bg-zinc-200">
@@ -346,8 +343,16 @@
                                 <p class="text-zinc-600 md:text-[16px] text-sm md:font-semibold pr-4 text-nowrap">
                                     Luggage: 2</p>
                             </div>
+                            <div class="flex justify-center items-center gap-2 rounded-full">
+                                <div
+                                    class="flex items-center justify-center rounded-full md:w-10 w-8 md:h-10 h-8 bg-zinc-200">
+                                    <i class="fa-solid fa-people-arrows text-zinc-800"></i>
+                                </div>
+                                <p class="text-zinc-600 md:text-[16px] text-sm md:font-semibold pr-4 text-nowrap">
+                                    Paseenger: 4</p>
+                            </div>
                         </div>
-                        <a href="/contact.html"
+                        <a href="/book-ride.html"
                             class="w-full lg:w-auto mt-5 flex items-center justify-center gap-3 py-3 px-10 font-medium text-center text-zinc-800 rounded-lg font-medium bg-[#efc360] hover:opacity-80 transition-all duration-500">
                             Book Now
                         </a>
@@ -355,23 +360,15 @@
                 </div>
             </div>
             <div data-aos="fade-up">
-                <div class=" border border-zinc-300 rounded-lg pb-4">
-                    <img src="/docs/assets/images/car13.jpg" class="rounded-t-lg" alt="">
+                <div class=" border border-zinc-300 rounded-lg pb-4 car-card" data-index="9">
+                    <!-- <img src="/docs/assets/images/car13.jpg" class="rounded-t-lg" alt=""> -->
                     <div class="px-5 pt-2">
                         <h2 class="text-2xl mt-3 font-semibold text-zinc-700">BMW 7 Series</h2>
                         <p class="text-zinc-400 font-medium text-lg">$85 per hour</p>
                         <p class="text-zinc-500 mt-3 pb-5">Lorem ipsum dolor sit amet
                             consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur.</p>
                         <img src="/docs/assets/images/car-2.png" class="mx-auto h-32" alt="">
-                        <div class="mt-8 mx-auto text-center w-full flex items-center justify-center gap-2">
-                            <div class="flex justify-center items-center gap-2 rounded-full">
-                                <div
-                                    class="flex items-center justify-center rounded-full md:w-10 w-8 md:h-10 h-8 bg-zinc-200">
-                                    <i class="fa-solid fa-people-arrows text-zinc-800"></i>
-                                </div>
-                                <p class="text-zinc-600 md:text-[16px] text-sm md:font-semibold pr-4 text-nowrap">
-                                    Paseenger: 4</p>
-                            </div>
+                        <div class="mt-8 mx-auto text-center w-full flex items-center justify-center flex-wrap gap-2">
                             <div class="flex justify-center items-center gap-2 rounded-full">
                                 <div
                                     class="flex items-center justify-center rounded-full md:w-10 w-8 md:h-10 h-8 bg-zinc-200">
@@ -380,8 +377,16 @@
                                 <p class="text-zinc-600 md:text-[16px] text-sm md:font-semibold pr-4 text-nowrap">
                                     Luggage: 2</p>
                             </div>
+                            <div class="flex justify-center items-center gap-2 rounded-full">
+                                <div
+                                    class="flex items-center justify-center rounded-full md:w-10 w-8 md:h-10 h-8 bg-zinc-200">
+                                    <i class="fa-solid fa-people-arrows text-zinc-800"></i>
+                                </div>
+                                <p class="text-zinc-600 md:text-[16px] text-sm md:font-semibold pr-4 text-nowrap">
+                                    Paseenger: 4</p>
+                            </div>
                         </div>
-                        <a href="/contact.html"
+                        <a href="/book-ride.html"
                             class="w-full lg:w-auto mt-5 flex items-center justify-center gap-3 py-3 px-10 font-medium text-center text-zinc-800 rounded-lg font-medium bg-[#efc360] hover:opacity-80 transition-all duration-500">
                             Book Now
                         </a>
@@ -390,6 +395,299 @@
             </div>
         </div>
     </section>
+
+    <div id="carModal"
+        class="fixed inset-0 z-50 hidden bg-black/80 fadeIn bg-opacity-50 flex items-center justify-center">
+        <div class="bg-white rounded-lg max-w-3xl w-full p-6 relative">
+            <button class="absolute cursor-pointer closeModal top-3 right-3 text-xl text-zinc-800">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+
+            <!-- Swiper -->
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <img src="/docs/assets/images/sub-car-1.png" class="w-full rounded-lg" />
+                        <h2 class="text-2xl mt-4 font-bold text-zinc-700">BMW 7 Series</h2>
+                        <p class="text-zinc-500 mt-2">Details for car 1...</p>
+                        <div class="mb-4 mt-5 mx-auto text-center w-full flex items-center flex-wrap gap-2">
+                            <div class="flex justify-center items-center gap-2 rounded-full">
+                                <div
+                                    class="flex items-center justify-center rounded-full md:w-10 w-8 md:h-10 h-8 bg-zinc-200">
+                                    <i class="fa-solid fa-suitcase-rolling text-zinc-800"></i>
+                                </div>
+                                <p class="text-zinc-600 md:text-[16px] text-sm md:font-semibold pr-4 text-nowrap">
+                                    Luggage: 2</p>
+                            </div>
+                            <div class="flex justify-center items-center gap-2 rounded-full">
+                                <div
+                                    class="flex items-center justify-center rounded-full md:w-10 w-8 md:h-10 h-8 bg-zinc-200">
+                                    <i class="fa-solid fa-people-arrows text-zinc-800"></i>
+                                </div>
+                                <p class="text-zinc-600 md:text-[16px] text-sm md:font-semibold pr-4 text-nowrap">
+                                    Paseenger: 4</p>
+                            </div>
+                        </div>
+                        <a href="/book-ride.html"
+                            class="w-full lg:w-auto mt-5 flex items-center justify-center gap-3 py-3 px-10 font-medium text-center text-zinc-800 rounded-lg font-medium bg-[#efc360] hover:opacity-80 transition-all duration-500">
+                            Book Now
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="/docs/assets/images/sub-car-1.png" class="w-full rounded-lg" />
+                        <h2 class="text-2xl mt-4 font-bold text-zinc-700">BMW 7 Series</h2>
+                        <p class="text-zinc-500 mt-2">Details for car 2...</p>
+                        <div class="mb-4 mt-5 mx-auto text-center w-full flex items-center flex-wrap gap-2">
+                            <div class="flex justify-center items-center gap-2 rounded-full">
+                                <div
+                                    class="flex items-center justify-center rounded-full md:w-10 w-8 md:h-10 h-8 bg-zinc-200">
+                                    <i class="fa-solid fa-suitcase-rolling text-zinc-800"></i>
+                                </div>
+                                <p class="text-zinc-600 md:text-[16px] text-sm md:font-semibold pr-4 text-nowrap">
+                                    Luggage: 2</p>
+                            </div>
+                            <div class="flex justify-center items-center gap-2 rounded-full">
+                                <div
+                                    class="flex items-center justify-center rounded-full md:w-10 w-8 md:h-10 h-8 bg-zinc-200">
+                                    <i class="fa-solid fa-people-arrows text-zinc-800"></i>
+                                </div>
+                                <p class="text-zinc-600 md:text-[16px] text-sm md:font-semibold pr-4 text-nowrap">
+                                    Paseenger: 4</p>
+                            </div>
+                        </div>
+                        <a href="/book-ride.html"
+                            class="w-full lg:w-auto mt-5 flex items-center justify-center gap-3 py-3 px-10 font-medium text-center text-zinc-800 rounded-lg font-medium bg-[#efc360] hover:opacity-80 transition-all duration-500">
+                            Book Now
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="/docs/assets/images/sub-car-1.png" class="w-full rounded-lg" />
+                        <h2 class="text-2xl mt-4 font-bold text-zinc-700">BMW 7 Series</h2>
+                        <p class="text-zinc-500 mt-2">Details for car 3...</p>
+                        <div class="mb-4 mt-5 mx-auto text-center w-full flex items-center flex-wrap gap-2">
+                            <div class="flex justify-center items-center gap-2 rounded-full">
+                                <div
+                                    class="flex items-center justify-center rounded-full md:w-10 w-8 md:h-10 h-8 bg-zinc-200">
+                                    <i class="fa-solid fa-suitcase-rolling text-zinc-800"></i>
+                                </div>
+                                <p class="text-zinc-600 md:text-[16px] text-sm md:font-semibold pr-4 text-nowrap">
+                                    Luggage: 2</p>
+                            </div>
+                            <div class="flex justify-center items-center gap-2 rounded-full">
+                                <div
+                                    class="flex items-center justify-center rounded-full md:w-10 w-8 md:h-10 h-8 bg-zinc-200">
+                                    <i class="fa-solid fa-people-arrows text-zinc-800"></i>
+                                </div>
+                                <p class="text-zinc-600 md:text-[16px] text-sm md:font-semibold pr-4 text-nowrap">
+                                    Paseenger: 4</p>
+                            </div>
+                        </div>
+                        <a href="/book-ride.html"
+                            class="w-full lg:w-auto mt-5 flex items-center justify-center gap-3 py-3 px-10 font-medium text-center text-zinc-800 rounded-lg font-medium bg-[#efc360] hover:opacity-80 transition-all duration-500">
+                            Book Now
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="/docs/assets/images/sub-car-1.png" class="w-full rounded-lg" />
+                        <h2 class="text-2xl mt-4 font-bold text-zinc-700">BMW 7 Series</h2>
+                        <p class="text-zinc-500 mt-2">Details for car 4...</p>
+                        <div class="mb-4 mt-5 mx-auto text-center w-full flex items-center flex-wrap gap-2">
+                            <div class="flex justify-center items-center gap-2 rounded-full">
+                                <div
+                                    class="flex items-center justify-center rounded-full md:w-10 w-8 md:h-10 h-8 bg-zinc-200">
+                                    <i class="fa-solid fa-suitcase-rolling text-zinc-800"></i>
+                                </div>
+                                <p class="text-zinc-600 md:text-[16px] text-sm md:font-semibold pr-4 text-nowrap">
+                                    Luggage: 2</p>
+                            </div>
+                            <div class="flex justify-center items-center gap-2 rounded-full">
+                                <div
+                                    class="flex items-center justify-center rounded-full md:w-10 w-8 md:h-10 h-8 bg-zinc-200">
+                                    <i class="fa-solid fa-people-arrows text-zinc-800"></i>
+                                </div>
+                                <p class="text-zinc-600 md:text-[16px] text-sm md:font-semibold pr-4 text-nowrap">
+                                    Paseenger: 4</p>
+                            </div>
+                        </div>
+                        <a href="/book-ride.html"
+                            class="w-full lg:w-auto mt-5 flex items-center justify-center gap-3 py-3 px-10 font-medium text-center text-zinc-800 rounded-lg font-medium bg-[#efc360] hover:opacity-80 transition-all duration-500">
+                            Book Now
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="/docs/assets/images/sub-car-1.png" class="w-full rounded-lg" />
+                        <h2 class="text-2xl mt-4 font-bold text-zinc-700">BMW 7 Series</h2>
+                        <p class="text-zinc-500 mt-2">Details for car 5...</p>
+                        <div class="mb-4 mt-5 mx-auto text-center w-full flex items-center flex-wrap gap-2">
+                            <div class="flex justify-center items-center gap-2 rounded-full">
+                                <div
+                                    class="flex items-center justify-center rounded-full md:w-10 w-8 md:h-10 h-8 bg-zinc-200">
+                                    <i class="fa-solid fa-suitcase-rolling text-zinc-800"></i>
+                                </div>
+                                <p class="text-zinc-600 md:text-[16px] text-sm md:font-semibold pr-4 text-nowrap">
+                                    Luggage: 2</p>
+                            </div>
+                            <div class="flex justify-center items-center gap-2 rounded-full">
+                                <div
+                                    class="flex items-center justify-center rounded-full md:w-10 w-8 md:h-10 h-8 bg-zinc-200">
+                                    <i class="fa-solid fa-people-arrows text-zinc-800"></i>
+                                </div>
+                                <p class="text-zinc-600 md:text-[16px] text-sm md:font-semibold pr-4 text-nowrap">
+                                    Paseenger: 4</p>
+                            </div>
+                        </div>
+                        <a href="/book-ride.html"
+                            class="w-full lg:w-auto mt-5 flex items-center justify-center gap-3 py-3 px-10 font-medium text-center text-zinc-800 rounded-lg font-medium bg-[#efc360] hover:opacity-80 transition-all duration-500">
+                            Book Now
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="/docs/assets/images/sub-car-1.png" class="w-full rounded-lg" />
+                        <h2 class="text-2xl mt-4 font-bold text-zinc-700">BMW 7 Series</h2>
+                        <p class="text-zinc-500 mt-2">Details for car 6...</p>
+                        <div class="mb-4 mt-5 mx-auto text-center w-full flex items-center flex-wrap gap-2">
+                            <div class="flex justify-center items-center gap-2 rounded-full">
+                                <div
+                                    class="flex items-center justify-center rounded-full md:w-10 w-8 md:h-10 h-8 bg-zinc-200">
+                                    <i class="fa-solid fa-suitcase-rolling text-zinc-800"></i>
+                                </div>
+                                <p class="text-zinc-600 md:text-[16px] text-sm md:font-semibold pr-4 text-nowrap">
+                                    Luggage: 2</p>
+                            </div>
+                            <div class="flex justify-center items-center gap-2 rounded-full">
+                                <div
+                                    class="flex items-center justify-center rounded-full md:w-10 w-8 md:h-10 h-8 bg-zinc-200">
+                                    <i class="fa-solid fa-people-arrows text-zinc-800"></i>
+                                </div>
+                                <p class="text-zinc-600 md:text-[16px] text-sm md:font-semibold pr-4 text-nowrap">
+                                    Paseenger: 4</p>
+                            </div>
+                        </div>
+                        <a href="/book-ride.html"
+                            class="w-full lg:w-auto mt-5 flex items-center justify-center gap-3 py-3 px-10 font-medium text-center text-zinc-800 rounded-lg font-medium bg-[#efc360] hover:opacity-80 transition-all duration-500">
+                            Book Now
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="/docs/assets/images/sub-car-1.png" class="w-full rounded-lg" />
+                        <h2 class="text-2xl mt-4 font-bold text-zinc-700">BMW 7 Series</h2>
+                        <p class="text-zinc-500 mt-2">Details for car 7...</p>
+                        <div class="mb-4 mt-5 mx-auto text-center w-full flex items-center flex-wrap gap-2">
+                            <div class="flex justify-center items-center gap-2 rounded-full">
+                                <div
+                                    class="flex items-center justify-center rounded-full md:w-10 w-8 md:h-10 h-8 bg-zinc-200">
+                                    <i class="fa-solid fa-suitcase-rolling text-zinc-800"></i>
+                                </div>
+                                <p class="text-zinc-600 md:text-[16px] text-sm md:font-semibold pr-4 text-nowrap">
+                                    Luggage: 2</p>
+                            </div>
+                            <div class="flex justify-center items-center gap-2 rounded-full">
+                                <div
+                                    class="flex items-center justify-center rounded-full md:w-10 w-8 md:h-10 h-8 bg-zinc-200">
+                                    <i class="fa-solid fa-people-arrows text-zinc-800"></i>
+                                </div>
+                                <p class="text-zinc-600 md:text-[16px] text-sm md:font-semibold pr-4 text-nowrap">
+                                    Paseenger: 4</p>
+                            </div>
+                        </div>
+                        <a href="/book-ride.html"
+                            class="w-full lg:w-auto mt-5 flex items-center justify-center gap-3 py-3 px-10 font-medium text-center text-zinc-800 rounded-lg font-medium bg-[#efc360] hover:opacity-80 transition-all duration-500">
+                            Book Now
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="/docs/assets/images/sub-car-1.png" class="w-full rounded-lg" />
+                        <h2 class="text-2xl mt-4 font-bold text-zinc-700">BMW 7 Series</h2>
+                        <p class="text-zinc-500 mt-2">Details for car 8...</p>
+                        <div class="mb-4 mt-5 mx-auto text-center w-full flex items-center flex-wrap gap-2">
+                            <div class="flex justify-center items-center gap-2 rounded-full">
+                                <div
+                                    class="flex items-center justify-center rounded-full md:w-10 w-8 md:h-10 h-8 bg-zinc-200">
+                                    <i class="fa-solid fa-suitcase-rolling text-zinc-800"></i>
+                                </div>
+                                <p class="text-zinc-600 md:text-[16px] text-sm md:font-semibold pr-4 text-nowrap">
+                                    Luggage: 2</p>
+                            </div>
+                            <div class="flex justify-center items-center gap-2 rounded-full">
+                                <div
+                                    class="flex items-center justify-center rounded-full md:w-10 w-8 md:h-10 h-8 bg-zinc-200">
+                                    <i class="fa-solid fa-people-arrows text-zinc-800"></i>
+                                </div>
+                                <p class="text-zinc-600 md:text-[16px] text-sm md:font-semibold pr-4 text-nowrap">
+                                    Paseenger: 4</p>
+                            </div>
+                        </div>
+                        <a href="/book-ride.html"
+                            class="w-full lg:w-auto mt-5 flex items-center justify-center gap-3 py-3 px-10 font-medium text-center text-zinc-800 rounded-lg font-medium bg-[#efc360] hover:opacity-80 transition-all duration-500">
+                            Book Now
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="/docs/assets/images/sub-car-1.png" class="w-full rounded-lg" />
+                        <h2 class="text-2xl mt-4 font-bold text-zinc-700">BMW 7 Series</h2>
+                        <p class="text-zinc-500 mt-2">Details for car 9...</p>
+                        <div class="mb-4 mt-5 mx-auto text-center w-full flex items-center flex-wrap gap-2">
+                            <div class="flex justify-center items-center gap-2 rounded-full">
+                                <div
+                                    class="flex items-center justify-center rounded-full md:w-10 w-8 md:h-10 h-8 bg-zinc-200">
+                                    <i class="fa-solid fa-suitcase-rolling text-zinc-800"></i>
+                                </div>
+                                <p class="text-zinc-600 md:text-[16px] text-sm md:font-semibold pr-4 text-nowrap">
+                                    Luggage: 2</p>
+                            </div>
+                            <div class="flex justify-center items-center gap-2 rounded-full">
+                                <div
+                                    class="flex items-center justify-center rounded-full md:w-10 w-8 md:h-10 h-8 bg-zinc-200">
+                                    <i class="fa-solid fa-people-arrows text-zinc-800"></i>
+                                </div>
+                                <p class="text-zinc-600 md:text-[16px] text-sm md:font-semibold pr-4 text-nowrap">
+                                    Paseenger: 4</p>
+                            </div>
+                        </div>
+                        <a href="/book-ride.html"
+                            class="w-full lg:w-auto mt-5 flex items-center justify-center gap-3 py-3 px-10 font-medium text-center text-zinc-800 rounded-lg font-medium bg-[#efc360] hover:opacity-80 transition-all duration-500">
+                            Book Now
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="/docs/assets/images/sub-car-1.png" class="w-full rounded-lg" />
+                        <h2 class="text-2xl mt-4 font-bold text-zinc-700">BMW 7 Series</h2>
+                        <p class="text-zinc-500 mt-2">Details for car 10...</p>
+                        <div class="mb-4 mt-5 mx-auto text-center w-full flex items-center flex-wrap gap-2">
+                            <div class="flex justify-center items-center gap-2 rounded-full">
+                                <div
+                                    class="flex items-center justify-center rounded-full md:w-10 w-8 md:h-10 h-8 bg-zinc-200">
+                                    <i class="fa-solid fa-suitcase-rolling text-zinc-800"></i>
+                                </div>
+                                <p class="text-zinc-600 md:text-[16px] text-sm md:font-semibold pr-4 text-nowrap">
+                                    Luggage: 2</p>
+                            </div>
+                            <div class="flex justify-center items-center gap-2 rounded-full">
+                                <div
+                                    class="flex items-center justify-center rounded-full md:w-10 w-8 md:h-10 h-8 bg-zinc-200">
+                                    <i class="fa-solid fa-people-arrows text-zinc-800"></i>
+                                </div>
+                                <p class="text-zinc-600 md:text-[16px] text-sm md:font-semibold pr-4 text-nowrap">
+                                    Paseenger: 4</p>
+                            </div>
+                        </div>
+                        <a href="/book-ride.html"
+                            class="w-full lg:w-auto mt-5 flex items-center justify-center gap-3 py-3 px-10 font-medium text-center text-zinc-800 rounded-lg font-medium bg-[#efc360] hover:opacity-80 transition-all duration-500">
+                            Book Now
+                        </a>
+                    </div>
+                    <!-- Add more .swiper-slide blocks -->
+                </div>
+
+                <!-- Navigation buttons -->
+                <div class="swiper-button-next scale-[0.50] !text-zinc-700"></div>
+                <div class="swiper-button-prev scale-[0.50] !text-zinc-700"></div>
+            </div>
+        </div>
+    </div>
+
+
 
     <!-- Ready to Go? -->
     <div class="carBg md:mt-28 mt-10">
@@ -400,7 +698,7 @@
                     your trip
                     wherever you are and ride with us now!</p>
                 <div data-aos="fade-up" class="" data-aos-delay="200">
-                    <a href="/contact.html"
+                    <a href="/book-ride.html"
                         class="bg-white transition-all duration-500 hover:opacity-80 rounded-full px-8 py-2 font-medium">Book
                         Now</a>
                 </div>
@@ -410,11 +708,39 @@
 
     <div class="md:pt-24 bg-zinc-900 pt-10" id="footer"></div>
 
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="https://unpkg.com/lenis@1.3.1/dist/lenis.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
     <script src="./docs/javascript/global.js"></script>
     <script src="./docs/javascript/navbar.js"></script>
     <script src="./docs/javascript/footer.js"></script>
+    <script>
+        const swiper = new Swiper(".mySwiper", {
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            loop: false, // set to true if you want infinite loop
+        });
+
+        // Modal open/close logic
+        const modal = document.getElementById("carModal");
+        const closeBtns = document.querySelectorAll(".closeModal");
+        const carCards = document.querySelectorAll(".car-card");
+
+        carCards.forEach((card, index) => {
+            card.addEventListener("click", () => {
+                modal.classList.remove("hidden");
+                swiper.slideTo(index); // Go to selected slide
+            });
+        });
+
+        closeBtns.forEach((btn) => {
+            btn.addEventListener("click", () => {
+                modal.classList.add("hidden");
+            });
+        });
+    </script>
 </body>
 
 </html>
