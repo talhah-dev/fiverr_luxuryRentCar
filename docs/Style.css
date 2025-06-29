@@ -113,3 +113,32 @@ input:user-invalid {
 .swiper-pagination-bullet{
         background: var(--swiper-pagination-bullet-inactive-color, #efc360) !important;
 }
+
+  .slide-in-left {
+    animation: slideFromLeft 1s ease-out forwards;
+  }
+
+  @keyframes slideFromLeft {
+    from {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  .slide-in-right {
+    animation: slideFromright 1s ease-out forwards;
+  }
+
+  @keyframes slideFromright {
+    from {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
