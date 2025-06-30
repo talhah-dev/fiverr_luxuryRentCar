@@ -110,7 +110,7 @@ navbar.innerHTML = `
                 <li>
                     <button onclick="toggleAccordion(5)"
                         class="w-full cursor-pointer flex justify-between items-center">
-                        <p class="text-lg text-start font-medium">Fleet</p>
+                        <a href="fleet.html" class="text-lg block text-start font-medium">Fleet</a>
                         <i id="icon-5"
                             class="fa-solid fa-angle-down text-gray-600 transition-transform duration-300"></i>
                     </button>
@@ -128,7 +128,7 @@ navbar.innerHTML = `
                 <li>
                     <button onclick="toggleAccordion(6)"
                         class="w-full cursor-pointer flex justify-between items-center">
-                        <p class="text-lg text-start font-medium">Services</p>
+                        <a href="/services.html" class="text-lg block text-start font-medium">Services</a>
                         <i id="icon-6"
                             class="fa-solid fa-angle-down text-gray-600 transition-transform duration-300"></i>
                     </button>
