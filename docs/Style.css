@@ -142,3 +142,15 @@ input:user-invalid {
       opacity: 1;
     }
   }
+
+
+/* Hide scrollbar (keep scroll working) */
+.hide-scrollbar {
+  overflow: auto;                 /* or overflow: scroll; */
+  scrollbar-width: none;          /* Firefox */
+  -ms-overflow-style: none;       /* IE 10+ / old Edge */
+}
+.hide-scrollbar::-webkit-scrollbar {
+  width: 0;                       /* Chrome/Safari/Edge (Chromium) */
+  height: 0;                      /* for horizontal scrollbars */
+}
