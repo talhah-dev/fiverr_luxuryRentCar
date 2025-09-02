@@ -45,18 +45,18 @@
 
 
 
-    <section class="relative ">
+    <section class="relative md:mt-10 mt-8">
         <!-- Corporate & Roadshows (Light Theme) -->
         <div class="max-w-7xl w-full mx-auto p-5 overflow-hidden ">
             <!-- Decorative gold bursts -->
             <div
-                class="pointer-events-none absolute top-0 -left-24 -z-10 h-80 w-80 rounded-full bg-[#F5C042]/30 blur-3xl">
+                class="pointer-events-none absolute md:block hidden top-0 -left-24 -z-10 h-80 w-80 rounded-full bg-[#F5C042]/30 blur-3xl">
             </div>
             <div
-                class="pointer-events-none absolute -bottom-32 -right-16 h-72 w-72 rounded-full bg-[#F5C042]/20 blur-3xl">
+                class="pointer-events-none absolute -bottom-32 md:block hidden -right-16 h-72 w-72 rounded-full bg-[#F5C042]/20 blur-3xl">
             </div>
 
-            <div class="grid gap-10 p-6 sm:p-10 lg:grid-cols-12 lg:gap-14">
+            <div class="grid gap-10 sm:p-10 grid-cols-1 lg:grid-cols-12 lg:gap-14">
                 <!-- Content -->
                 <div class="order-2 lg:order-1 lg:col-span-6">
                     <div
@@ -126,69 +126,12 @@
                 </div>
 
                 <!-- Visual / collage -->
-                <div class="order-1 lg:order-2 lg:col-span-6">
+                <div class="order-1 lg:order-2 grid-cols-1 lg:col-span-6">
                     <div class="relative mx-auto max-w-xl">
                         <!-- main car image -->
                         <div class="relative overflow-hidden rounded-2xl shadow-2xl ring-1 ring-black/10">
                             <img src="/docs/assets/images/car (1).jpg" alt="Executive fleet sedan"
                                 class="h-[420px] w-full object-cover" />
-                        </div>
-
-                        <!-- floating itinerary card -->
-                        <div
-                            class="absolute -bottom-7 -right-7 w-[78%] rotate-2 rounded-2xl bg-white/90 p-5 shadow-xl backdrop-blur ring-1 ring-black/10">
-                            <div class="flex items-center justify-between">
-                                <h3 class="text-sm font-bold">Sample Roadshow • NYC</h3>
-                                <span
-                                    class="rounded-full bg-emerald-100 px-2 py-0.5 text-xs font-semibold text-emerald-700 ring-1 ring-emerald-200">Live</span>
-                            </div>
-                            <ol class="mt-3 space-y-3">
-                                <li class="flex items-start gap-3">
-                                    <span
-                                        class="mt-0.5 h-5 w-5 shrink-0 rounded-full bg-[#F5C042]/20 text-center text-[11px] font-bold leading-5 text-amber-900 ring-1 ring-[#F5C042]/40">1</span>
-                                    <div>
-                                        <p class="text-sm font-medium">Pickup • JFK T4</p>
-                                        <p class="text-xs text-slate-500">Flight DL 212 • 08:10</p>
-                                    </div>
-                                </li>
-                                <li class="flex items-start gap-3">
-                                    <span
-                                        class="mt-0.5 h-5 w-5 shrink-0 rounded-full bg-[#F5C042]/20 text-center text-[11px] font-bold leading-5 text-amber-900 ring-1 ring-[#F5C042]/40">2</span>
-                                    <div>
-                                        <p class="text-sm font-medium">Pitch • Midtown</p>
-                                        <p class="text-xs text-slate-500">Morgan Hall • 09:30</p>
-                                    </div>
-                                </li>
-                                <li class="flex items-start gap-3">
-                                    <span
-                                        class="mt-0.5 h-5 w-5 shrink-0 rounded-full bg-[#F5C042]/20 text-center text-[11px] font-bold leading-5 text-amber-900 ring-1 ring-[#F5C042]/40">3</span>
-                                    <div>
-                                        <p class="text-sm font-medium">Lunch • Upper East</p>
-                                        <p class="text-xs text-slate-500">Le Prime • 12:15</p>
-                                    </div>
-                                </li>
-                                <li class="flex items-start gap-3">
-                                    <span
-                                        class="mt-0.5 h-5 w-5 shrink-0 rounded-full bg-[#F5C042]/20 text-center text-[11px] font-bold leading-5 text-amber-900 ring-1 ring-[#F5C042]/40">4</span>
-                                    <div>
-                                        <p class="text-sm font-medium">Investor Meet • SoHo</p>
-                                        <p class="text-xs text-slate-500">Studio 7 • 14:00</p>
-                                    </div>
-                                </li>
-                            </ol>
-                            <div class="mt-4 flex items-center justify-between">
-                                <div class="flex items-center gap-2 text-xs text-slate-600">
-                                    <!-- shield -->
-                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 24 24"
-                                        fill="currentColor">
-                                        <path d="M12 2l7 4v6c0 5-3.5 9.74-7 10-3.5-.26-7-5-7-10V6l7-4z" />
-                                    </svg>
-                                    Driver NDA Active
-                                </div>
-                                <button
-                                    class="rounded-lg bg-black px-3 py-1.5 text-xs font-semibold text-white shadow-md hover:opacity-90">Share
-                                    Link</button>
-                            </div>
                         </div>
 
                         <!-- small badge -->
@@ -201,7 +144,7 @@
             </div>
 
             <!-- feature cards -->
-            <div class="border-t border-slate-200 p-6 sm:p-10">
+            <div class="border-t border-slate-200 pt-8 md:pt-10">
                 <div class="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
                     <div
                         class="group rounded-2xl bg-slate-50 p-5 ring-1 ring-slate-200 transition hover:-translate-y-1 hover:shadow-lg">
@@ -270,17 +213,18 @@
         </div>
     </section>
 
-    <section class="relative md:mt-10 mt-5">
+    <section class="relative md:mt-20 mt-10">
         <!-- Events & Special Occasions (Light Theme) -->
         <div class=" overflow-hidden max-w-7xl w-full mx-auto p-5">
             <!-- soft gold accents -->
-            <div class="pointer-events-none absolute -top-20 -left-24 h-80 w-80 rounded-full bg-[#F5C042]/25 blur-3xl">
+            <div
+                class="pointer-events-none md:block hidden absolute -top-20 -left-24 h-80 w-80 rounded-full bg-[#F5C042]/25 blur-3xl">
             </div>
             <div
-                class="pointer-events-none -z-10 absolute -bottom-24 -right-10 h-72 w-72 rounded-full bg-[#F5C042]/15 blur-3xl">
+                class="pointer-events-none md:block hidden -z-10 absolute -bottom-24 -right-10 h-72 w-72 rounded-full bg-[#F5C042]/15 blur-3xl">
             </div>
 
-            <div class="grid gap-10 p-6 sm:p-10 lg:grid-cols-12 lg:gap-14">
+            <div class="grid gap-10 sm:p-10 grid-cols-1 lg:grid-cols-12 lg:gap-14">
                 <!-- Visual collage -->
                 <div class="lg:col-span-6">
                     <div class="relative mx-auto max-w-2xl">
@@ -415,423 +359,21 @@
 
 
             </div>
-
-            <!-- Packages -->
-            <div class="border-t border-slate-200 p-6 sm:p-10">
-                <div class="mb-6 flex items-center justify-between">
-                    <h3 class="text-xl font-extrabold tracking-tight">Popular Packages</h3>
-                    <a href="#all-packages" class="text-sm font-semibold text-slate-700 hover:text-black">See all</a>
-                </div>
-
-                <div class="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
-                    <!-- Wedding -->
-                    <div
-                        class="group rounded-2xl bg-slate-50 p-5 ring-1 ring-slate-200 transition hover:-translate-y-1 hover:shadow-lg">
-                        <div
-                            class="mb-3 grid h-10 w-10 place-items-center rounded-full bg-[#F5C042]/20 ring-1 ring-[#F5C042]/40">
-                            <!-- heart -->
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-amber-900" viewBox="0 0 24 24"
-                                fill="currentColor">
-                                <path
-                                    d="M12 21s-6.716-4.534-9.193-7.011C-1.07 11.253.107 6.5 4.4 6.5c2.3 0 3.6 1.4 3.6 1.4s1.3-1.4 3.6-1.4c4.293 0 5.47 4.753 1.593 7.489C18.716 16.466 12 21 12 21z" />
-                            </svg>
-                        </div>
-                        <h4 class="font-semibold">Wedding Classic • 4 hrs</h4>
-                        <ul class="mt-2 space-y-1 text-sm text-slate-600">
-                            <li>Ribbon &amp; “Just Married” sign</li>
-                            <li>Red-carpet arrival</li>
-                            <li>Chilled water &amp; photo-assist</li>
-                        </ul>
-                        <div class="mt-4 flex items-center justify-between">
-                            <span class="text-sm font-bold"><span class="text-[#F5C042]">$379</span></span>
-                            <a href="#quote"
-                                class="rounded-lg border border-slate-300 bg-white px-3 py-1.5 text-sm font-semibold text-slate-700 hover:bg-slate-100">Get
-                                Quote</a>
-                        </div>
-                    </div>
-
-                    <!-- Prom -->
-                    <div
-                        class="group rounded-2xl bg-slate-50 p-5 ring-1 ring-slate-200 transition hover:-translate-y-1 hover:shadow-lg">
-                        <div
-                            class="mb-3 grid h-10 w-10 place-items-center rounded-full bg-[#F5C042]/20 ring-1 ring-[#F5C042]/40">
-                            <!-- star -->
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-amber-900" viewBox="0 0 24 24"
-                                fill="currentColor">
-                                <path
-                                    d="M12 2l2.9 6.26L22 9.27l-5 4.87 1.18 6.86L12 17.77l-6.18 3.23L7 14.14 2 9.27l7.1-1.01L12 2z" />
-                            </svg>
-                        </div>
-                        <h4 class="font-semibold">Prom Night • 3 hrs</h4>
-                        <ul class="mt-2 space-y-1 text-sm text-slate-600">
-                            <li>Group pickup &amp; photos</li>
-                            <li>Bluetooth audio &amp; lights</li>
-                            <li>Parent text updates</li>
-                        </ul>
-                        <div class="mt-4 flex items-center justify-between">
-                            <span class="text-sm font-bold"><span class="text-[#F5C042]">$249</span></span>
-                            <a href="#quote"
-                                class="rounded-lg border border-slate-300 bg-white px-3 py-1.5 text-sm font-semibold text-slate-700 hover:bg-slate-100">Get
-                                Quote</a>
-                        </div>
-                    </div>
-
-                    <!-- Night Out -->
-                    <div
-                        class="group rounded-2xl bg-slate-50 p-5 ring-1 ring-slate-200 transition hover:-translate-y-1 hover:shadow-lg">
-                        <div
-                            class="mb-3 grid h-10 w-10 place-items-center rounded-full bg-[#F5C042]/20 ring-1 ring-[#F5C042]/40">
-                            <!-- music -->
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-amber-900" viewBox="0 0 24 24"
-                                fill="currentColor">
-                                <path d="M12 3v10.55A4 4 0 1014 17V7h4V3h-6z" />
-                            </svg>
-                        </div>
-                        <h4 class="font-semibold">Night Out • 2 hrs</h4>
-                        <ul class="mt-2 space-y-1 text-sm text-slate-600">
-                            <li>2 stops included</li>
-                            <li>Door-to-door service</li>
-                            <li>Chilled water onboard</li>
-                        </ul>
-                        <div class="mt-4 flex items-center justify-between">
-                            <span class="text-sm font-bold"><span class="text-[#F5C042]">$189</span></span>
-                            <a href="#quote"
-                                class="rounded-lg border border-slate-300 bg-white px-3 py-1.5 text-sm font-semibold text-slate-700 hover:bg-slate-100">Get
-                                Quote</a>
-                        </div>
-                    </div>
-                </div>
-
-                <p class="mt-5 text-xs text-slate-500">*Amenities vary by vehicle and market. Ask your coordinator for
-                    details.</p>
-            </div>
         </div>
     </section>
 
-    <section class="relative">
-        <!-- Group Travel (Vans/SUVs) • Light Theme • Unique Ticket/Grid style -->
-        <div class=" overflow-hidden max-w-7xl w-full mx-auto p-5 bg-gradient-to-b from-white to-amber-50/30 ">
-            <!-- subtle gold grid background -->
-            <div
-                class="pointer-events-none absolute inset-0 [background-image:linear-gradient(to_right,rgba(245,192,66,0.08)_1px,transparent_1px),linear-gradient(to_bottom,rgba(245,192,66,0.06)_1px,transparent_1px)] [background-size:24px_24px]">
-            </div>
-
-            <!-- header -->
-            <div class="relative grid gap-8 p-6 sm:p-10 lg:grid-cols-12 lg:gap-12">
-                <div class="lg:col-span-7">
-                    <div
-                        class="inline-flex items-center gap-2 rounded-full bg-amber-50 px-3 py-1 text-xs font-semibold text-amber-900 ring-1 ring-amber-200">
-                        <!-- van icon -->
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 24 24" fill="currentColor">
-                            <path
-                                d="M3 7h10a4 4 0 013.6 2.2l1.2 2.4A2 2 0 0020.6 13H21a1 1 0 011 1v3a1 1 0 01-1 1h-1a2.5 2.5 0 11-5 0H9.5a2.5 2.5 0 11-5 0H3a1 1 0 01-1-1V9a2 2 0 012-2zm2 9a1.5 1.5 0 103 0 1.5 1.5 0 00-3 0zm11.5 0a1.5 1.5 0 103 0 1.5 1.5 0 00-3 0zM13 9H4v4h9V9z" />
-                        </svg>
-                        Group Travel • Vans &amp; SUVs
-                    </div>
-                    <h2 class="mt-3 text-3xl font-extrabold tracking-tight sm:text-4xl">
-                        Smooth rides for teams, families, and crews (5–14 passengers)
-                    </h2>
-                    <p class="mt-3 max-w-2xl text-slate-600">
-                        Spacious seating, pro chauffeurs, and coordinated multi-stop routes. Perfect for offsites, game
-                        days, airport shuttles, and nights out with the squad.
-                    </p>
-
-                    <!-- quick tags -->
-                    <div class="mt-6 flex flex-wrap gap-2">
-                        <span
-                            class="rounded-full border border-amber-200 bg-white px-3 py-1 text-xs font-medium text-amber-900">Luggage
-                            Space</span>
-                        <span
-                            class="rounded-full border border-slate-200 bg-white px-3 py-1 text-xs font-medium text-slate-700">Child
-                            Seats (on request)</span>
-                        <span
-                            class="rounded-full border border-slate-200 bg-white px-3 py-1 text-xs font-medium text-slate-700">Multi-Stop
-                            Itineraries</span>
-                        <span
-                            class="rounded-full border border-slate-200 bg-white px-3 py-1 text-xs font-medium text-slate-700">Door-to-Door</span>
-                        <span
-                            class="rounded-full border border-slate-200 bg-white px-3 py-1 text-xs font-medium text-slate-700">24/7
-                            Support</span>
-                    </div>
-                </div>
-
-                <!-- sticker card -->
-                <div class="lg:col-span-5">
-                    <div
-                        class="relative w-full rounded-3xl border border-dashed border-amber-300 bg-white p-5 shadow-xl ring-1 ring-amber-100">
-                        <div
-                            class="absolute -top-3 right-5 rounded-full bg-emerald-100 px-3 py-1 text-[11px] font-bold uppercase tracking-wide text-emerald-700 ring-1 ring-emerald-200">
-                            Most Booked
-                        </div>
-                        <h3 class="text-lg font-extrabold">Recommended Group Sizes</h3>
-                        <ul class="mt-3 space-y-3 text-sm text-slate-700">
-                            <li
-                                class="flex items-center justify-between rounded-xl bg-slate-50 px-3 py-2 ring-1 ring-slate-200">
-                                <span class="font-medium">5–6 passengers</span>
-                                <span
-                                    class="rounded-md bg-amber-100 px-2 py-0.5 text-xs font-semibold text-amber-900">Luxury
-                                    SUV</span>
-                            </li>
-                            <li
-                                class="flex items-center justify-between rounded-xl bg-slate-50 px-3 py-2 ring-1 ring-slate-200">
-                                <span class="font-medium">7–10 passengers</span>
-                                <span
-                                    class="rounded-md bg-amber-100 px-2 py-0.5 text-xs font-semibold text-amber-900">Business
-                                    Van</span>
-                            </li>
-                            <li
-                                class="flex items-center justify-between rounded-xl bg-slate-50 px-3 py-2 ring-1 ring-slate-200">
-                                <span class="font-medium">11–14 passengers</span>
-                                <span
-                                    class="rounded-md bg-amber-100 px-2 py-0.5 text-xs font-semibold text-amber-900">Sprinter
-                                    Van</span>
-                            </li>
-                        </ul>
-
-                        <div class="mt-4 flex items-center justify-between">
-                            <div class="flex items-center gap-2 text-xs text-slate-500">
-                                <!-- shield -->
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 24 24"
-                                    fill="currentColor">
-                                    <path d="M12 2l7 4v6c0 5-3.5 9.74-7 10-3.5-.26-7-5-7-10V6l7-4z" />
-                                </svg>
-                                Licensed • Insured • Vetted
-                            </div>
-                            <a href="#group-quote"
-                                class="rounded-xl bg-[#F5C042] px-4 py-2 text-sm font-semibold text-black shadow-md shadow-amber-200 hover:brightness-95">Get
-                                Group Quote</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- horizontal snap-scroller of vehicles -->
-            <div class="relative border-t border-amber-100/80 bg-white/70 p-6 sm:p-10">
-                <div class="mb-4 flex items-center justify-between">
-                    <h3 class="text-xl font-extrabold tracking-tight">Choose Your Ride</h3>
-                    <div class="text-xs text-slate-500">Swipe / Scroll →</div>
-                </div>
-
-                <div class="flex snap-x snap-mandatory gap-5 overflow-x-auto pb-3">
-                    <!-- Luxury SUV card -->
-                    <article
-                        class="snap-start min-w-[320px] max-w-sm flex-1 rounded-3xl border border-dashed border-slate-300 bg-white p-4 shadow-lg ring-1 ring-slate-200">
-                        <div class="relative overflow-hidden rounded-2xl ring-1 ring-slate-200">
-                            <img src="/docs/assets/images/car (7).jpg" alt="Luxury SUV black exterior"
-                                class="h-44 w-full object-cover">
-                            <span
-                                class="absolute left-3 top-3 rounded-full bg-white/90 px-2 py-1 text-[11px] font-semibold ring-1 ring-slate-200">5–6
-                                pax</span>
-                        </div>
-                        <div class="mt-4">
-                            <h4 class="text-lg font-bold">Luxury SUV</h4>
-                            <p class="mt-1 text-sm text-slate-600">Comfortable captain seats, premium sound, dual-zone
-                                AC.</p>
-                            <ul class="mt-3 grid grid-cols-2 gap-2 text-xs text-slate-600">
-                                <li class="flex items-center gap-2"><span
-                                        class="h-5 w-5 rounded-full bg-amber-100 ring-1 ring-amber-200 grid place-items-center">✓</span>
-                                    Luggage: 4</li>
-                                <li class="flex items-center gap-2"><span
-                                        class="h-5 w-5 rounded-full bg-amber-100 ring-1 ring-amber-200 grid place-items-center">✓</span>
-                                    USB Ports</li>
-                                <li class="flex items-center gap-2"><span
-                                        class="h-5 w-5 rounded-full bg-amber-100 ring-1 ring-amber-200 grid place-items-center">✓</span>
-                                    AC / Climate</li>
-                                <li class="flex items-center gap-2"><span
-                                        class="h-5 w-5 rounded-full bg-amber-100 ring-1 ring-amber-200 grid place-items-center">✓</span>
-                                    Water Onboard</li>
-                            </ul>
-                            <div class="mt-4 flex items-center justify-between">
-                                <span class="text-sm font-bold"><span class="text-[#F5C042]">$89</span> / hr</span>
-                                <a href="#book"
-                                    class="rounded-lg border border-slate-300 bg-white px-3 py-1.5 text-sm font-semibold text-slate-700 hover:bg-slate-50">Select</a>
-                            </div>
-                        </div>
-                    </article>
-
-                    <!-- Business Van card -->
-                    <article
-                        class="snap-start min-w-[320px] max-w-sm flex-1 rounded-3xl border border-dashed border-slate-300 bg-white p-4 shadow-lg ring-1 ring-slate-200">
-                        <div class="relative overflow-hidden rounded-2xl ring-1 ring-slate-200">
-                            <img src="/docs/assets/images/car (4).jpg" alt="Business passenger van"
-                                class="h-44 w-full object-cover">
-                            <span
-                                class="absolute left-3 top-3 rounded-full bg-white/90 px-2 py-1 text-[11px] font-semibold ring-1 ring-slate-200">7–10
-                                pax</span>
-                        </div>
-                        <div class="mt-4">
-                            <h4 class="text-lg font-bold">Business Van</h4>
-                            <p class="mt-1 text-sm text-slate-600">Spacious cabin, easy access doors, luggage-friendly
-                                layout.</p>
-                            <ul class="mt-3 grid grid-cols-2 gap-2 text-xs text-slate-600">
-                                <li class="flex items-center gap-2"><span
-                                        class="h-5 w-5 rounded-full bg-amber-100 ring-1 ring-amber-200 grid place-items-center">✓</span>
-                                    Luggage: 8</li>
-                                <li class="flex items-center gap-2"><span
-                                        class="h-5 w-5 rounded-full bg-amber-100 ring-1 ring-amber-200 grid place-items-center">✓</span>
-                                    USB / Power</li>
-                                <li class="flex items-center gap-2"><span
-                                        class="h-5 w-5 rounded-full bg-amber-100 ring-1 ring-amber-200 grid place-items-center">✓</span>
-                                    AC / Climate</li>
-                                <li class="flex items-center gap-2"><span
-                                        class="h-5 w-5 rounded-full bg-amber-100 ring-1 ring-amber-200 grid place-items-center">✓</span>
-                                    Water Onboard</li>
-                            </ul>
-                            <div class="mt-4 flex items-center justify-between">
-                                <span class="text-sm font-bold"><span class="text-[#F5C042]">$109</span> / hr</span>
-                                <a href="#book"
-                                    class="rounded-lg border border-slate-300 bg-white px-3 py-1.5 text-sm font-semibold text-slate-700 hover:bg-slate-50">Select</a>
-                            </div>
-                        </div>
-                    </article>
-
-                    <!-- Sprinter Van card -->
-                    <article
-                        class="snap-start min-w-[320px] max-w-sm flex-1 rounded-3xl border border-dashed border-slate-300 bg-white p-4 shadow-lg ring-1 ring-slate-200">
-                        <div class="relative overflow-hidden rounded-2xl ring-1 ring-slate-200">
-                            <img src="/docs/assets/images/car (2).jpg" alt="Sprinter van black exterior"
-                                class="h-44 w-full object-cover">
-                            <span
-                                class="absolute left-3 top-3 rounded-full bg-white/90 px-2 py-1 text-[11px] font-semibold ring-1 ring-slate-200">11–14
-                                pax</span>
-                        </div>
-                        <div class="mt-4">
-                            <h4 class="text-lg font-bold">Sprinter Van</h4>
-                            <p class="mt-1 text-sm text-slate-600">High-roof comfort, aisle space, and group-friendly
-                                seating.</p>
-                            <ul class="mt-3 grid grid-cols-2 gap-2 text-xs text-slate-600">
-                                <li class="flex items-center gap-2"><span
-                                        class="h-5 w-5 rounded-full bg-amber-100 ring-1 ring-amber-200 grid place-items-center">✓</span>
-                                    Luggage: 12</li>
-                                <li class="flex items-center gap-2"><span
-                                        class="h-5 w-5 rounded-full bg-amber-100 ring-1 ring-amber-200 grid place-items-center">✓</span>
-                                    USB / Power</li>
-                                <li class="flex items-center gap-2"><span
-                                        class="h-5 w-5 rounded-full bg-amber-100 ring-1 ring-amber-200 grid place-items-center">✓</span>
-                                    AC / Climate</li>
-                                <li class="flex items-center gap-2"><span
-                                        class="h-5 w-5 rounded-full bg-amber-100 ring-1 ring-amber-200 grid place-items-center">✓</span>
-                                    Water Onboard</li>
-                            </ul>
-                            <div class="mt-4 flex items-center justify-between">
-                                <span class="text-sm font-bold"><span class="text-[#F5C042]">$139</span> / hr</span>
-                                <a href="#book"
-                                    class="rounded-lg border border-slate-300 bg-white px-3 py-1.5 text-sm font-semibold text-slate-700 hover:bg-slate-50">Select</a>
-                            </div>
-                        </div>
-                    </article>
-                </div>
-
-                <!-- route ribbon -->
-                <div
-                    class="mt-8 hidden items-center justify-between rounded-2xl bg-amber-50/60 p-4 ring-1 ring-amber-200 md:flex">
-                    <div class="flex items-center gap-3">
-                        <span
-                            class="grid h-7 w-7 place-items-center rounded-full bg-white text-xs font-bold ring-1 ring-amber-300">A</span>
-                        <span class="text-sm font-semibold">Hotel</span>
-                    </div>
-                    <div class="h-1 w-1/5 rounded-full bg-gradient-to-r from-amber-200 to-amber-400"></div>
-                    <div class="flex items-center gap-3">
-                        <span
-                            class="grid h-7 w-7 place-items-center rounded-full bg-white text-xs font-bold ring-1 ring-amber-300">B</span>
-                        <span class="text-sm font-semibold">Conference</span>
-                    </div>
-                    <div class="h-1 w-1/5 rounded-full bg-gradient-to-r from-amber-200 to-amber-400"></div>
-                    <div class="flex items-center gap-3">
-                        <span
-                            class="grid h-7 w-7 place-items-center rounded-full bg-white text-xs font-bold ring-1 ring-amber-300">C</span>
-                        <span class="text-sm font-semibold">Dinner</span>
-                    </div>
-                    <a href="#itinerary"
-                        class="rounded-lg bg-black px-3 py-1.5 text-xs font-semibold text-white shadow hover:opacity-90">Save
-                        Itinerary</a>
-                </div>
-            </div>
-
-            <!-- comparison table -->
-            <div class="relative border-t border-amber-100 bg-white p-6 sm:p-10">
-                <h3 class="text-xl font-extrabold tracking-tight">Quick Compare</h3>
-                <div class="mt-4 overflow-x-auto">
-                    <table class="w-full min-w-[720px] text-left text-sm">
-                        <thead>
-                            <tr class="text-slate-500">
-                                <th class="px-3 py-3">Vehicle</th>
-                                <th class="px-3 py-3">Seats</th>
-                                <th class="px-3 py-3">Luggage</th>
-                                <th class="px-3 py-3">Amenities</th>
-                                <th class="px-3 py-3">Best For</th>
-                                <th class="px-3 py-3"></th>
-                            </tr>
-                        </thead>
-                        <tbody class="divide-y divide-slate-200">
-                            <tr>
-                                <td class="px-3 py-4 font-semibold">Luxury SUV</td>
-                                <td class="px-3 py-4">5–6</td>
-                                <td class="px-3 py-4">4</td>
-                                <td class="px-3 py-4">USB • AC • Water</td>
-                                <td class="px-3 py-4">Families, small teams</td>
-                                <td class="px-3 py-4">
-                                    <a href="#book"
-                                        class="rounded-md border border-slate-300 bg-white px-3 py-1.5 text-xs font-semibold text-slate-700 hover:bg-slate-50">Book</a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="px-3 py-4 font-semibold">Business Van</td>
-                                <td class="px-3 py-4">7–10</td>
-                                <td class="px-3 py-4">8</td>
-                                <td class="px-3 py-4">USB • AC • Water</td>
-                                <td class="px-3 py-4">Airport shuttles, crews</td>
-                                <td class="px-3 py-4">
-                                    <a href="#book"
-                                        class="rounded-md border border-slate-300 bg-white px-3 py-1.5 text-xs font-semibold text-slate-700 hover:bg-slate-50">Book</a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="px-3 py-4 font-semibold">Sprinter Van</td>
-                                <td class="px-3 py-4">11–14</td>
-                                <td class="px-3 py-4">12</td>
-                                <td class="px-3 py-4">USB • AC • Water</td>
-                                <td class="px-3 py-4">Offsites, game days</td>
-                                <td class="px-3 py-4">
-                                    <a href="#book"
-                                        class="rounded-md border border-slate-300 bg-white px-3 py-1.5 text-xs font-semibold text-slate-700 hover:bg-slate-50">Book</a>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-
-                <!-- final CTA -->
-                <div
-                    class="mt-8 flex flex-wrap items-center justify-between gap-4 rounded-2xl border border-amber-200 bg-amber-50/70 p-5">
-                    <p class="text-sm text-amber-900">
-                        Need multiple vehicles or staggered pickups? We’ll coordinate it all with a dedicated
-                        dispatcher.
-                    </p>
-                    <div class="flex gap-3">
-                        <a href="#group-quote"
-                            class="rounded-xl bg-[#F5C042] px-5 py-3 text-sm font-semibold text-black shadow-lg shadow-amber-200 hover:brightness-95">Request
-                            Group Quote</a>
-                        <a href="#contact"
-                            class="rounded-xl border border-slate-300 bg-white px-5 py-3 text-sm font-semibold text-slate-700 hover:bg-slate-50">Talk
-                            to Coordinator</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="bg-[#0B0F1A] relative">
+    <section class="bg-[#0B0F1A] md:py-20 py-10 md:mt-20 mt-10 relative">
         <!-- Services Hero / Overview -->
         <div class=" overflow-hidden max-w-7xl w-full mx-auto p-5  text-white">
             <!-- subtle gold glow -->
-            <div class="pointer-events-none absolute -top-24 -left-24 h-72 w-72 rounded-full bg-[#F5C042]/20 blur-3xl">
+            <div
+                class="pointer-events-none absolute md:block hidden -top-24 -left-24 h-72 w-72 rounded-full bg-[#F5C042]/20 blur-3xl">
             </div>
             <div
-                class="pointer-events-none absolute -bottom-24 -right-24 h-72 w-72 rounded-full bg-[#F5C042]/10 blur-3xl">
+                class="pointer-events-none absolute md:block hidden -bottom-24 -right-24 h-72 w-72 rounded-full bg-[#F5C042]/10 blur-3xl">
             </div>
 
-            <div class="grid gap-10 p-6 sm:p-10 lg:grid-cols-2 lg:gap-12">
+            <div class="grid gap-10 sm:p-10 lg:grid-cols-2 grid-cols-1 lg:gap-12">
                 <!-- Text -->
                 <div class="flex flex-col justify-center">
                     <div
@@ -1000,7 +542,7 @@
                 class="pointer-events-none absolute inset-0 [background-image:linear-gradient(to_right,rgba(245,192,66,0.08)_1px,transparent_1px),linear-gradient(to_bottom,rgba(245,192,66,0.06)_1px,transparent_1px)] [background-size:28px_28px]">
             </div>
 
-            <div class="relative grid gap-10 p-6 sm:p-10 lg:grid-cols-12 lg:gap-14">
+            <div class="relative grid gap-10 sm:p-10 lg:grid-cols-12 grid-cols-1 lg:gap-14">
                 <!-- LEFT: Copy -->
                 <div class="lg:col-span-6">
                     <div
@@ -1210,7 +752,7 @@
             </div>
 
             <!-- feature ribbon -->
-            <div class="border-t border-slate-200 bg-white/70 p-6 sm:p-10">
+            <div class="border-t border-slate-200 bg-white/70 mt-8 sm:p-10">
                 <div class="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
                     <div
                         class="group rounded-2xl bg-slate-50 p-5 ring-1 ring-slate-200 transition hover:-translate-y-1 hover:shadow-lg">
@@ -1277,12 +819,13 @@
         </div>
     </section>
 
+
     <section class="relative md:mt-5">
         <!-- Recommended Fleet by Service • Light Theme • Kanban / Lanes style -->
         <div class=" overflow-hidden max-w-7xl w-full mx-auto p-5">
 
             <!-- Header -->
-            <div class="relative flex flex-col gap-3 p-6 sm:p-10">
+            <div class="relative flex flex-col gap-3  sm:p-10">
                 <div
                     class="inline-flex w-fit items-center gap-2 rounded-full bg-black/5 px-3 py-1 text-xs font-semibold text-black/70 ring-1 ring-black/10">
                     <!-- steering wheel -->
@@ -1562,7 +1105,7 @@
                 </div>
 
                 <!-- bottom CTA -->
-                <div class="border-t border-slate-200 p-6 sm:p-10">
+                <div class="border-t border-slate-200 pt-8">
                     <div
                         class="flex flex-wrap items-center justify-between gap-4 rounded-2xl border border-amber-200 bg-amber-50/70 p-5">
                         <p class="text-sm text-amber-900">Not sure what to pick? Tell us your route and group size—we’ll
@@ -1581,21 +1124,22 @@
         </div>
     </section>
 
-    <section class="relative">
+    <section class="relative md:mt-0 mt-5">
         <!-- How It Works • Light Theme • Orbit / Radial Stepper (unique, not left-right) -->
         <div class=" overflow-hidden max-w-7xl w-full mx-auto p-5">
             <!-- soft gold grid + glows -->
             <div
                 class="pointer-events-none absolute inset-0 [background-image:linear-gradient(to_right,rgba(245,192,66,0.06)_1px,transparent_1px),linear-gradient(to_bottom,rgba(245,192,66,0.04)_1px,transparent_1px)] [background-size:28px_28px]">
             </div>
-            <div class="pointer-events-none absolute -top-24 -left-24 h-80 w-80 rounded-full bg-[#F5C042]/25 blur-3xl">
+            <div
+                class="pointer-events-none absolute md:block hidden -top-24 -left-24 h-80 w-80 rounded-full bg-[#F5C042]/25 blur-3xl">
             </div>
             <div
-                class="pointer-events-none absolute -bottom-28 -right-20 h-72 w-72 rounded-full bg-[#F5C042]/15 blur-3xl">
+                class="pointer-events-none absolute md:block hidden -bottom-28 -right-20 h-72 w-72 rounded-full bg-[#F5C042]/15 blur-3xl">
             </div>
 
             <!-- Header -->
-            <div class="relative p-6 sm:p-10">
+            <div class="relative sm:p-10">
                 <div
                     class="inline-flex items-center gap-2 rounded-full bg-black/5 px-3 py-1 text-xs font-semibold text-black/70 ring-1 ring-black/10">
                     <!-- spark icon -->
@@ -1728,7 +1272,7 @@
             </div>
 
             <!-- Mobile / small screens: vertical spiral list -->
-            <div class="relative md:hidden p-6 pt-0">
+            <div class="relative md:hidden mt-10">
                 <ol class="relative mx-auto max-w-md space-y-4">
                     <li class="relative rounded-2xl border border-amber-200 bg-white p-4 shadow-sm">
                         <div
@@ -1771,18 +1315,19 @@
         </div>
     </section>
 
-    <section class="relative">
+    <section class="relative md:mt-0 mt-5">
         <!-- Pricing & Packages • Light Theme • Segmented Toggle + Ticket Cards (unique) -->
         <div class=" overflow-hidden max-w-7xl w-full mx-auto p-5">
 
-            <div class="pointer-events-none absolute -top-24 -left-24 h-72 w-72 rounded-full bg-[#F5C042]/25 blur-3xl">
+            <div
+                class="pointer-events-none absolute md:block hidden -top-24 -left-24 h-72 w-72 rounded-full bg-[#F5C042]/25 blur-3xl">
             </div>
             <div
-                class="pointer-events-none absolute -bottom-24 -right-24 h-72 w-72 rounded-full bg-[#F5C042]/15 blur-3xl">
+                class="pointer-events-none absolute md:block hidden -bottom-24 -right-24 h-72 w-72 rounded-full bg-[#F5C042]/15 blur-3xl">
             </div>
 
             <!-- Header -->
-            <div class="relative p-6 sm:p-10">
+            <div class="relative sm:p-10">
                 <div
                     class="inline-flex items-center gap-2 rounded-full bg-black/5 px-3 py-1 text-xs font-semibold text-black/70 ring-1 ring-black/10">
                     <!-- tag -->
@@ -1817,7 +1362,7 @@
             </div>
 
             <!-- HOURLY PACKAGES (default visible) -->
-            <div class="relative px-6 pb-6 sm:px-10 sm:pb-10 peer-checked:hidden">
+            <div class="relative mt-6 pb-6 sm:px-10 sm:pb-10 peer-checked:hidden">
                 <!-- Ticket-styled cards -->
                 <div class="grid gap-6 lg:grid-cols-3">
                     <!-- Card 1 -->
@@ -2071,7 +1616,7 @@
             </div>
 
             <!-- Bottom CTA strip -->
-            <div class="border-t border-slate-200 bg-white/70 p-6 sm:p-8">
+            <div class="border-t border-slate-200 bg-white/70 pt-6 sm:p-8">
                 <div
                     class="mx-auto flex max-w-5xl flex-wrap items-center justify-between gap-4 rounded-2xl border border-amber-200 bg-amber-50/70 p-5">
                     <div class="text-sm text-amber-900">
@@ -2090,21 +1635,23 @@
         </div>
     </section>
 
-    <section class="relative overflow-x-hidden w-full md:mt-10 mt-5">
+
+    <section class="relative overflow-x-hidden w-full md:mt-10 mt-8x">
         <!-- Safety & Professional Chauffeurs • Light Theme • Timeline + ID Badge + Seals (unique layout) -->
         <div class=" overflow-hidden max-w-7xl w-full mx-auto p-5">
             <!-- decorative ribbon & grid -->
             <div
                 class="pointer-events-none absolute inset-0 [background-image:linear-gradient(to_right,rgba(245,192,66,0.06)_1px,transparent_1px),linear-gradient(to_bottom,rgba(245,192,66,0.04)_1px,transparent_1px)] [background-size:28px_28px]">
             </div>
-            <div class="pointer-events-none absolute top-20 -left-24 h-80 w-80 rounded-full bg-[#F5C042]/25 blur-3xl">
+            <div
+                class="pointer-events-none absolute md:block hidden top-20 -left-24 h-80 w-80 rounded-full bg-[#F5C042]/25 blur-3xl">
             </div>
             <div
-                class="pointer-events-none absolute bottom-20 -right-20 h-72 w-72 rounded-full bg-[#F5C042]/15 blur-3xl">
+                class="pointer-events-none absolute md:block hidden bottom-20 -right-20 h-72 w-72 rounded-full bg-[#F5C042]/15 blur-3xl">
             </div>
-            
+
             <!-- Header -->
-            <div class="relative z-10 p-6 sm:p-10">
+            <div class="relative z-10 sm:p-10">
                 <div
                     class="inline-flex items-center gap-2 rounded-full bg-black/5 px-3 py-1 text-xs font-semibold text-black/70 ring-1 ring-black/10">
                     <!-- shield -->
@@ -2121,7 +1668,7 @@
                             continuously—so your ride is safe, discreet, and on time.</p>
                     </div>
                     <!-- Safety Seal -->
-                    <div class="relative">
+                    <div class="relative md:block hidden">
                         <div
                             class="grid place-items-center rounded-full border-2 border-dashed border-amber-300 bg-white p-8 shadow-lg">
                             <div
@@ -2143,7 +1690,7 @@
             </div>
 
             <!-- Body: Timeline + ID Badge + Standards -->
-            <div class="relative grid gap-10 p-6 sm:p-10 lg:grid-cols-12 lg:gap-12">
+            <div class="relative grid gap-10 sm:p-10 lg:grid-cols-12 grid-cols-1 lg:gap-12">
                 <!-- TIMELINE (zig-zag, not simple left/right) -->
                 <div class="lg:col-span-7">
                     <div class="relative">
@@ -2463,7 +2010,7 @@
             </div>
 
             <!-- CTA -->
-            <div class="border-t border-slate-200 bg-white/70 p-6 sm:p-8">
+            <div class="border-t border-slate-200 bg-white/70 pt-6 sm:p-8">
                 <div
                     class="mx-auto flex max-w-5xl flex-wrap items-center justify-between gap-4 rounded-2xl border border-amber-200 bg-amber-50/70 p-5">
                     <div class="text-sm text-amber-900">
@@ -2482,21 +2029,23 @@
         </div>
     </section>
 
+
+
     <section class="relative">
         <!-- Ready to Book (CTA) • Light Theme • Centered Arch + Glass Form (unique) -->
         <div class=" overflow-hidden max-w-7xl w-full mx-auto p-5">
             <!-- decorative arch glow -->
-            <div class="pointer-events-none absolute inset-0 flex items-center justify-center">
+            <div class="pointer-events-none absolute md:block hidden inset-0 flex items-center justify-center">
                 <div class="h-[560px] w-[560px] rounded-[50%] border-2 border-dashed border-[#F5C042]/30"></div>
             </div>
-            <div class="pointer-events-none absolute -top-24 -left-24 h-80 w-80 rounded-full bg-[#F5C042]/25 blur-3xl">
+            <div class="pointer-events-none absolute md:block hidden -top-24 -left-24 h-80 w-80 rounded-full bg-[#F5C042]/25 blur-3xl">
             </div>
             <div
-                class="pointer-events-none absolute -bottom-28 -right-20 h-72 w-72 rounded-full bg-[#F5C042]/15 blur-3xl">
+                class="pointer-events-none absolute md:block hidden -bottom-28 -right-20 h-72 w-72 rounded-full bg-[#F5C042]/15 blur-3xl">
             </div>
 
             <!-- header -->
-            <div class="relative p-6 pt-10 sm:p-10">
+            <div class="relative pt-10 sm:p-10">
                 <div class="mx-auto max-w-2xl text-center">
                     <div
                         class="mx-auto mb-3 inline-flex items-center gap-2 rounded-full bg-black/5 px-3 py-1 text-xs font-semibold text-black/70 ring-1 ring-black/10">
@@ -2528,7 +2077,7 @@
             </div>
 
             <!-- center form + actions -->
-            <div class="relative px-6 pb-6 sm:px-10 sm:pb-10">
+            <div class="relative pb-6 sm:px-10 sm:pb-10 md:mt-0 mt-5">
                 <!-- gradient frame -->
                 <div
                     class="mx-auto max-w-3xl rounded-3xl bg-gradient-to-r from-[#F5C042] via-[#F5C042]/70 to-[#F5C042] p-[1px]">
@@ -2580,7 +2129,7 @@
                             </div>
 
                             <!-- actions -->
-                            <div class="sm:col-span-2 mt-2 flex flex-wrap items-center gap-3">
+                            <div class="sm:col-span-2 mt-2 md:flex-row flex-col flex flex-wrap items-center gap-3">
                                 <button type="button"
                                     class="inline-flex flex-1 items-center justify-center rounded-xl bg-[#F5C042] px-5 py-3 font-semibold text-black shadow-lg shadow-[#F5C042]/30 transition hover:brightness-95">
                                     Get Instant Quote
@@ -2620,7 +2169,6 @@
             </div>
         </div>
     </section>
-
 
 
     <div class="md:pt-24 bg-zinc-900 pt-10" id="footer"></div>
